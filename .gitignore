@@ -1,2 +1,7 @@
 .DS_Store
 .claude/
+
+# local artifacts (not part of the website)
+posters/
+*.pptx
+~$*
