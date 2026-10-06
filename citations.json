@@ -1,0 +1,344 @@
+{
+ "updated": "2026-10-06",
+ "month": "Sep 2026",
+ "source": "Semantic Scholar",
+ "total": 1448,
+ "papers": [
+  {
+   "name": "INVESTORBENCH",
+   "title": "INVESTORBENCH: A Benchmark for Financial Decision-Making Tasks with LLM-based Agent",
+   "arxiv": "2412.18174",
+   "total": 77,
+   "monthly": 9
+  },
+  {
+   "name": "PIXIU",
+   "title": "PIXIU: A Large Language Model, Instruction Data and Evaluation Benchmark for Finance",
+   "arxiv": "2306.05443",
+   "total": 320,
+   "monthly": 8
+  },
+  {
+   "name": "FinBen",
+   "title": "FinBen: A Holistic Financial Benchmark for Large Language Models",
+   "arxiv": "2402.12659",
+   "total": 216,
+   "monthly": 7
+  },
+  {
+   "name": "FinCon",
+   "title": "FinCon: A Synthesized LLM Multi-Agent System with Conceptual Verbal Reinforcement for Enhanced Financial Decision Making",
+   "arxiv": "2407.06567",
+   "total": 197,
+   "monthly": 7
+  },
+  {
+   "name": "FLAG-Trader",
+   "title": "FLAG-Trader: Fusion LLM-Agent with Gradient-based Reinforcement Learning for Financial Trading",
+   "arxiv": "2502.11433",
+   "total": 35,
+   "monthly": 5
+  },
+  {
+   "name": "The Wall Street Neophyte",
+   "title": "The Wall Street Neophyte: A Zero-Shot Analysis of ChatGPT Over MultiModal Stock Movement Prediction Challenges",
+   "arxiv": "2304.05351",
+   "total": 91,
+   "monthly": 3
+  },
+  {
+   "name": "FinAuditing",
+   "title": "FinAuditing: A Financial Taxonomy-Structured Multi-Document Benchmark for Evaluating LLMs",
+   "arxiv": "2510.08886",
+   "total": 17,
+   "monthly": 3
+  },
+  {
+   "name": "Conv-FinRe",
+   "title": "Conv-FinRe: A Conversational and Longitudinal Benchmark for Utility-Grounded Financial Recommendation",
+   "arxiv": "2602.16990",
+   "total": 6,
+   "monthly": 3
+  },
+  {
+   "name": "Selective Preference Optimization…",
+   "title": "Selective Preference Optimization via Token-Level Reward Function Estimation",
+   "arxiv": "2408.13518",
+   "total": 29,
+   "monthly": 2
+  },
+  {
+   "name": "When Agents Trade",
+   "title": "When Agents Trade: Live Multi-Market Trading Benchmark for LLM Agents",
+   "arxiv": "2510.11695",
+   "total": 19,
+   "monthly": 2
+  },
+  {
+   "name": "MultiFinBen",
+   "title": "MultiFinBen: Benchmarking Large Language Models for Multilingual and Multimodal Financial Application",
+   "arxiv": "2506.14028",
+   "total": 12,
+   "monthly": 2
+  },
+  {
+   "name": "Herculean",
+   "title": "Herculean: An Agentic Benchmark for Financial Intelligence",
+   "arxiv": "2605.14355",
+   "total": 6,
+   "monthly": 2
+  },
+  {
+   "name": "Can LLM Agents Be CFOs",
+   "title": "Can LLM Agents Be CFOs? Benchmarking Long-Horizon Resource Allocation in an Uncertain Enterprise Environment",
+   "arxiv": "2603.23638",
+   "total": 3,
+   "monthly": 2
+  },
+  {
+   "name": "MetaAligner",
+   "title": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+   "arxiv": "2403.17141",
+   "total": 48,
+   "monthly": 1
+  },
+  {
+   "name": "Plutus",
+   "title": "Plutus: Benchmarking Large Language Models in Low-Resource Greek Finance",
+   "arxiv": "2502.18772",
+   "total": 24,
+   "monthly": 1
+  },
+  {
+   "name": "FinChain",
+   "title": "FinChain: A Symbolic Benchmark for Verifiable Chain-of-Thought Financial Reasoning",
+   "arxiv": "2506.02515",
+   "total": 19,
+   "monthly": 1
+  },
+  {
+   "name": "Retrieval-augmented Large Language…",
+   "title": "Retrieval-augmented Large Language Models for Financial Time Series Forecasting",
+   "arxiv": "2502.05878",
+   "total": 13,
+   "monthly": 1
+  },
+  {
+   "name": "UCFE",
+   "title": "UCFE: A User-Centric Financial Expertise Benchmark for Large Language Models",
+   "arxiv": "2410.14059",
+   "total": 11,
+   "monthly": 1
+  },
+  {
+   "name": "Same Claim, Different…",
+   "title": "Same Claim, Different Judgment: Benchmarking Scenario-Induced Bias in Multilingual Financial Misinformation Detection",
+   "arxiv": "2601.05403",
+   "total": 7,
+   "monthly": 1
+  },
+  {
+   "name": "The Illusion of…",
+   "title": "The Illusion of Specialization: Unveiling the Domain-Invariant \"Standing Committee\" in Mixture-of-Experts Models",
+   "arxiv": "2601.03425",
+   "total": 6,
+   "monthly": 1
+  },
+  {
+   "name": "FinReporting",
+   "title": "FinReporting: An Agentic Workflow for Localized Reporting of Cross-Jurisdiction Financial Disclosures",
+   "arxiv": "2604.05966",
+   "total": 6,
+   "monthly": 1
+  },
+  {
+   "name": "The CLEF-2026 FinMMEval Lab",
+   "title": "The CLEF-2026 FinMMEval Lab: Multilingual and Multimodal Evaluation of Financial AI Systems",
+   "arxiv": "2602.10886",
+   "total": 5,
+   "monthly": 1
+  },
+  {
+   "name": "SAHM",
+   "title": "SAHM: A Benchmark for Arabic Financial and Shari'ah-Compliant Reasoning",
+   "arxiv": "2604.19098",
+   "total": 4,
+   "monthly": 1
+  },
+  {
+   "name": "AUDITFLOW",
+   "title": "AUDITFLOW: Executable Symbolic Environments for Structured Financial Reporting Verification",
+   "arxiv": "2606.03031",
+   "total": 3,
+   "monthly": 1
+  },
+  {
+   "name": "Ebisu",
+   "title": "Ebisu: Benchmarking Large Language Models in Japanese Finance",
+   "arxiv": "2602.01479",
+   "total": 2,
+   "monthly": 1
+  },
+  {
+   "name": "FinTrace",
+   "title": "FinTrace: Holistic Trajectory-Level Evaluation of LLM Tool Calling for Long-Horizon Financial Tasks",
+   "arxiv": "2604.10015",
+   "total": 2,
+   "monthly": 1
+  },
+  {
+   "name": "Open-FinLLMs",
+   "title": "Open-FinLLMs: Open Multimodal Large Language Models for Financial Applications",
+   "arxiv": "2408.11878",
+   "total": 53,
+   "monthly": 0
+  },
+  {
+   "name": "Empowering Many, Biasing…",
+   "title": "Empowering Many, Biasing a Few: Generalist Credit Scoring through Large Language Models",
+   "arxiv": "2310.00566",
+   "total": 30,
+   "monthly": 0
+  },
+  {
+   "name": "HARMONIC",
+   "title": "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection",
+   "arxiv": "2408.02927",
+   "total": 28,
+   "monthly": 0
+  },
+  {
+   "name": "LAiW",
+   "title": "LAiW: A Chinese Legal Large Language Models Benchmark (A Technical Report)",
+   "arxiv": "2310.05620",
+   "total": 24,
+   "monthly": 0
+  },
+  {
+   "name": "Fino1",
+   "title": "Fino1: On the Transferability of Reasoning-Enhanced LLMs and Reinforcement Learning to Finance",
+   "arxiv": "2502.08127",
+   "total": 22,
+   "monthly": 0
+  },
+  {
+   "name": "Dólares or Dollars",
+   "title": "Dólares or Dollars? Unraveling the Bilingual Prowess of Financial LLMs Between Spanish and English",
+   "arxiv": "2402.07405",
+   "total": 19,
+   "monthly": 0
+  },
+  {
+   "name": "Open FinLLM Leaderboard",
+   "title": "Open FinLLM Leaderboard: Towards Financial AI Readiness",
+   "arxiv": "2501.10963",
+   "total": 15,
+   "monthly": 0
+  },
+  {
+   "name": "No Language is an Island",
+   "title": "No Language is an Island: Unifying Chinese and English in Financial Large Language Models, Instruction Data, and Benchmarks",
+   "arxiv": "2403.06249",
+   "total": 14,
+   "monthly": 0
+  },
+  {
+   "name": "FMDLlama",
+   "title": "FMDLlama: Financial Misinformation Detection Based on Large Language Models",
+   "arxiv": "2409.16452",
+   "total": 12,
+   "monthly": 0
+  },
+  {
+   "name": "All That Glisters…",
+   "title": "All That Glisters Is Not Gold: A Benchmark for Reference-Free Counterfactual Financial Misinformation Detection",
+   "arxiv": "2601.04160",
+   "total": 12,
+   "monthly": 0
+  },
+  {
+   "name": "Select and Trade",
+   "title": "Select and Trade: Towards Unified Pair Trading with Hierarchical Reinforcement Learning",
+   "arxiv": "2301.10724",
+   "total": 11,
+   "monthly": 0
+  },
+  {
+   "name": "AuditWen",
+   "title": "AuditWen: An Open-Source Large Language Model for Audit",
+   "arxiv": "2410.10873",
+   "total": 7,
+   "monthly": 0
+  },
+  {
+   "name": "FinAudio",
+   "title": "FinAudio: A Benchmark for Audio Large Language Models in Financial Applications",
+   "arxiv": "2503.20990",
+   "total": 5,
+   "monthly": 0
+  },
+  {
+   "name": "OrdRankBen",
+   "title": "OrdRankBen: A Novel Ranking Benchmark for Ordinal Relevance in NLP",
+   "arxiv": "2503.00674",
+   "total": 4,
+   "monthly": 0
+  },
+  {
+   "name": "FinTagging",
+   "title": "FinTagging: Benchmarking LLMs for Extracting and Structuring Financial Information",
+   "arxiv": "2505.20650",
+   "total": 4,
+   "monthly": 0
+  },
+  {
+   "name": "MMAFFBen",
+   "title": "MMAFFBen: A Multilingual and Multimodal Affective Analysis Benchmark for Evaluating LLMs and VLMs",
+   "arxiv": "2505.24423",
+   "total": 4,
+   "monthly": 0
+  },
+  {
+   "name": "A Report on…",
+   "title": "A Report on Financial Regulations Challenge at COLING 2025",
+   "arxiv": "2412.11159",
+   "total": 3,
+   "monthly": 0
+  },
+  {
+   "name": "Moira",
+   "title": "Moira: Language-driven Hierarchical Reinforcement Learning for Pair Trading",
+   "arxiv": "2605.01954",
+   "total": 2,
+   "monthly": 0
+  },
+  {
+   "name": "RKEFino1",
+   "title": "RKEFino1: A Regulation Knowledge-Enhanced Large Language Model",
+   "arxiv": "2506.05700",
+   "total": 1,
+   "monthly": 0
+  },
+  {
+   "name": "FinCriticalED",
+   "title": "FinCriticalED: A Visual Benchmark for Financial Fact-Level OCR",
+   "arxiv": "2511.14998",
+   "total": 0,
+   "monthly": 0
+  },
+  {
+   "name": "MFMDQwen",
+   "title": "MFMDQwen: Multilingual Financial Misinformation Detection Based on Large Language Model",
+   "arxiv": "2604.18272",
+   "total": 0,
+   "monthly": 0
+  },
+  {
+   "name": "Concordia",
+   "title": "Concordia: Self-Improving Synthetic Tables for Federated LLMs",
+   "arxiv": "2605.09855",
+   "total": 0,
+   "monthly": 0
+  }
+ ]
+}

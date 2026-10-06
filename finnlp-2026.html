@@ -1,100 +1,88 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FinNLP 2026 Workshop @ EMNLP 2026 — The Fin AI</title>
-    <meta name="description" content="The 11th Workshop on Financial Technology and Natural Language Processing (FinNLP 2026), co-located with EMNLP 2026 in Budapest, Hungary." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="wrap nav">
-        <a href="./index.html" class="brand"><img src="./images/finai-logo-white.png" alt="" />The Fin AI</a>
-        <nav class="nav-links">
-          <a href="./index.html">Home</a>
-          <a href="./about.html">About</a>
-          <a href="./research.html">Research</a>
-          <a href="./events.html">Events</a>
-        </nav>
-        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer">Join the Community</a>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FinNLP 2026 @ EMNLP 2026 — The Fin AI</title>
+<meta name="description" content="The 11th Workshop on Financial Technology and Natural Language Processing, collocated with EMNLP 2026 in Budapest." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="header" id="header">
+  <div class="wrap nav">
+    <a href="./index.html" class="brand"><img src="./images/finai-logo.png" alt="" />The Fin AI</a>
+    <nav class="nav-links" id="navLinks"><span class="nav-pill"></span><a href="./index.html">Home</a><a href="./about.html">About</a><a href="./research.html">Research</a><a href="./events.html">Events</a><a href="./leadership.html">Leadership</a></nav>
+    <a class="btn magnetic join" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer">Join the Community <span class="arrow">→</span></a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu"><a href="./index.html">Home</a><a href="./about.html">About</a><a href="./research.html">Research</a><a href="./events.html">Events</a><a href="./leadership.html">Leadership</a><a href="https://discord.gg/Wpt347rusk" target="_blank" rel="noreferrer">Discord ↗</a></nav>
+
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb reveal-up"><a href="./events.html">Events</a><span class="sep"></span><span>Workshop</span></div>
+    <h1 class="split">FinNLP 2026 @ EMNLP 2026</h1>
+    <p class="lead reveal-up" style="transition-delay:.45s">The 11th Workshop on Financial Technology and Natural Language Processing — the annual workshop of ACL SIG-FinTech, applying NLP, machine learning, and large language models to finance, economics, and law.</p>
+    <div class="reveal-up" style="transition-delay:.3s;margin-top:22px"><span class="status upcoming"><span class="dot"></span>Upcoming</span></div><div class="reveal-up" style="transition-delay:.55s"><p class="kicker" style="margin-top:34px">Starts in</p><div class="countdown" data-until="2026-10-24T09:00:00+02:00"><div><b data-k="d">00</b><small>Days</small></div><div><b data-k="h">00</b><small>Hrs</small></div><div><b data-k="m">00</b><small>Min</small></div><div><b data-k="s">00</b><small>Sec</small></div></div></div><div class="facts reveal-up" style="transition-delay:.6s"><div class="fact"><div class="k">Date</div><div class="v">Oct 24–29, 2026</div></div><div class="fact"><div class="k">Location</div><div class="v">Budapest, Hungary</div></div><div class="fact"><div class="k">Collocated with</div><div class="v">EMNLP 2026</div></div><div class="fact"><div class="k">Series</div><div class="v">ACL SIG-FinTech</div></div></div><div class="actions reveal-up" style="transition-delay:.7s"><a class="btn btn--lg magnetic" href="https://sigfintech.github.io/finnlp2026/" target="_blank" rel="noreferrer">Visit the workshop website <span class="arrow">↗</span></a></div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:40px">
+  <div class="wrap">
+    <div class="prose" data-reveal>
+      <p>FinNLP brings together researchers and practitioners working at the intersection of natural language processing and finance, covering financial documents, legal compliance, and responsible AI practices across these domains.</p>
+      <p>Full details, topics, and important dates are on the <a href="https://sigfintech.github.io/finnlp2026/" target="_blank" rel="noreferrer">workshop website</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px">
+  <div class="wrap">
+    <div class="row-head" data-reveal><h2>More events</h2><a class="link-u" href="./events.html">All events →</a></div>
+    <div class="events" style="grid-template-columns:repeat(2,1fr)"><a class="ev" data-k="ongoing" data-reveal style="--i:0" href="./webinar-series.html"><span class="tag ongoing"><span class="dot"></span>Ongoing</span><h3>SIG-FinTech × The Fin AI Webinar Series</h3><p class="when">Online · co-hosted with ACL SIG-FinTech</p><span class="go">Details<span class="circle">→</span></span></a><a class="ev" data-k="held" data-reveal style="--i:1" href="./symposium-2026.html"><span class="tag held">Held</span><h3>The Fin AI Symposium 2026</h3><p class="when">July 3, 2026 · San Diego · collocated with ACL 2026</p><span class="go">Recap<span class="circle">→</span></span></a></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand"><img src="./images/finai-logo.png" alt="" />The Fin AI</span>
+        <p class="footer-tagline">A global academy advancing Financial General Intelligence through education, open research, and incubation.</p>
+        <p class="founders">Founded by <span>Qianqian Xie</span>, <span>Alejandro Lopez-Lira</span>, <span>Sophia Ananiadou</span>, <span>Jian-yun Nie</span>, and <span>Jimin Huang</span>.</p>
       </div>
-    </header>
-
-    <main>
-      <section class="page-head wrap">
-        <p class="eyebrow"><a href="./events.html">Events</a> · Workshop</p>
-        <h1>FinNLP 2026 @ EMNLP 2026</h1>
-        <p class="lead">
-          The 11th Workshop on Financial Technology and Natural Language
-          Processing — the annual workshop of ACL SIG-FinTech, applying NLP,
-          machine learning, and large language models to finance, economics,
-          and law.
-        </p>
-
-        <div class="factgrid">
-          <div class="fact"><div class="k">Date</div><div class="v">Oct 24–29, 2026</div></div>
-          <div class="fact"><div class="k">Location</div><div class="v">Budapest, Hungary</div></div>
-          <div class="fact"><div class="k">Collocated with</div><div class="v">EMNLP 2026</div></div>
-          <div class="fact"><div class="k">Series</div><div class="v">ACL SIG-FinTech</div></div>
-        </div>
-      </section>
-
-      <section class="section wrap">
-        <div class="prose">
-          <p>
-            FinNLP brings together researchers and practitioners working at the
-            intersection of natural language processing and finance, covering
-            financial documents, legal compliance, and responsible AI practices
-            across these domains. Full details, topics, and important dates are
-            on the workshop website.
-          </p>
-        </div>
-        <p style="margin-top: 34px;">
-          <a class="btn btn--lg" href="https://sigfintech.github.io/finnlp2026/" target="_blank" rel="noreferrer">Visit the workshop website →</a>
-        </p>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="wrap">
-        <div class="footer-top">
-          <div class="footer-brand">
-            <span class="brand"><img src="./images/finai-logo.png" alt="" />The Fin AI</span>
-            <p class="footer-tagline">A global academy advancing Financial General Intelligence through education, open research, and incubation.</p>
-          </div>
-          <nav class="footer-col">
-            <h4>Explore</h4>
-            <ul>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./leadership.html">Leadership</a></li>
-              <li><a href="./policies.html">Policies</a></li>
-              <li><a href="./research.html">Research</a></li>
-              <li><a href="./events.html">Events</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-col">
-            <h4>Connect</h4>
-            <ul>
-              <li><a href="https://groups.google.com/g/the-fin-ai" target="_blank" rel="noreferrer">Google Groups</a></li>
-              <li><a href="https://huggingface.co/TheFinAI" target="_blank" rel="noreferrer">Hugging Face</a></li>
-              <li><a href="https://www.youtube.com/@TheFinAI-g6j/featured" target="_blank" rel="noreferrer">YouTube</a></li>
-              <li><a href="https://scholar.google.com/citations?hl=en&view_op=list_works&user=P3Mxb4kAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer-bottom">
-          <div class="footer-partners">
-            <a href="https://sigfintech.github.io/" target="_blank" rel="noreferrer"><img src="./images/partner-sigfintech.png" alt="SIG FinTech" /></a>
-            <a href="https://www.nactem.ac.uk/" target="_blank" rel="noreferrer"><img src="./images/partner-nactem.png" alt="NACTEM" /></a>
-            <a href="#" rel="noreferrer"><img src="./images/partner-3.png" alt="Cyber-Physical Intelligence Lab" /></a>
-          </div>
-          <span class="copy">© 2026 The Fin AI · AI Readiness in Finance</span>
-        </div>
+      <nav><h4>Explore</h4><ul>
+        <li><a href="./about.html">About</a></li><li><a href="./leadership.html">Leadership</a></li><li><a href="./policies.html">Policies</a></li><li><a href="./research.html">Research</a></li><li><a href="./events.html">Events</a></li>
+      </ul></nav>
+      <nav><h4>Connect</h4><ul>
+        <li><a href="https://github.com/The-FinAI" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><a href="https://discord.gg/Wpt347rusk" target="_blank" rel="noreferrer">Discord</a></li>
+        <li><a href="https://groups.google.com/g/the-fin-ai" target="_blank" rel="noreferrer">Google Groups</a></li>
+        <li><a href="https://huggingface.co/TheFinAI" target="_blank" rel="noreferrer">Hugging Face</a></li>
+        <li><a href="https://www.youtube.com/@TheFinAI-g6j/featured" target="_blank" rel="noreferrer">YouTube</a></li>
+        <li><a href="https://scholar.google.com/citations?hl=en&view_op=list_works&user=P3Mxb4kAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a></li>
+      </ul></nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="partners">
+        <a href="https://sigfintech.github.io/" target="_blank" rel="noreferrer"><img src="./images/partner-sigfintech.png" alt="SIG FinTech" /></a>
+        <a href="https://www.nactem.ac.uk/" target="_blank" rel="noreferrer"><img src="./images/partner-nactem.png" alt="NACTEM" /></a>
+        <a href="#"><img src="./images/partner-3.png" alt="Cyber-Physical Intelligence Lab" /></a>
       </div>
-    </footer>
-  </body>
+      <span class="copy">© 2026 The Fin AI · AI Readiness in Finance</span>
+      <a href="#" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+    <div class="giant" aria-hidden="true">The Fin AI</div>
+  </div>
+</footer>
+
+<script src="./site.js"></script>
+</body>
 </html>

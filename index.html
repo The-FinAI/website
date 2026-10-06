@@ -1,322 +1,517 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Fin AI — A global academy advancing Financial General Intelligence</title>
-    <meta
-      name="description"
-      content="The Fin AI is a global academy advancing Financial General Intelligence through education, open research, and incubation."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="wrap nav">
-        <a href="./index.html" class="brand"><img src="./images/finai-logo-white.png" alt="" />The Fin AI</a>
-        <nav class="nav-links">
-          <a href="./index.html">Home</a>
-          <a href="./about.html">About</a>
-          <a href="./research.html">Research</a>
-          <a href="./events.html">Events</a>
-        </nav>
-        <a
-          class="btn"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header"
-          target="_blank"
-          rel="noreferrer"
-          >Join the Community</a
-        >
-      </div>
-    </header>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Fin AI — A global academy advancing Financial General Intelligence</title>
+<meta name="description" content="The Fin AI is a global academy advancing Financial General Intelligence through education, open research, and incubation." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div class="progress" id="progress"></div>
 
-    <main>
-      <section class="hero wrap">
-        <p class="eyebrow">A global academy advancing Financial General Intelligence</p>
-        <h1>The Fin AI</h1>
-        <p class="hero-cred"><a href="https://gfmag.com/award/award-winners/best-financial-innovation-labs-2026/" target="_blank" rel="noreferrer">Global Finance · World’s Best Financial Innovation Labs 2026 →</a></p>
-        <p class="lead">
-          A strong community of researchers, engineers, and financial experts
-          is the driving force behind bridging AI and finance.
-        </p>
-        <a
-          class="btn btn--lg"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header"
-          target="_blank"
-          rel="noreferrer"
-          >Join the Community</a
-        >
-      </section>
+<header class="header" id="header">
+  <div class="wrap nav">
+    <a href="./index.html" class="brand"><img src="./images/finai-logo.png" alt="" />The Fin AI</a>
+    <nav class="nav-links" id="navLinks"><span class="nav-pill"></span><a href="./index.html" aria-current="page">Home</a><a href="./about.html">About</a><a href="./research.html">Research</a><a href="./events.html">Events</a><a href="./leadership.html">Leadership</a></nav>
+    <a class="btn magnetic join" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer">Join the Community <span class="arrow">→</span></a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu"><a href="./index.html">Home</a><a href="./about.html">About</a><a href="./research.html">Research</a><a href="./events.html">Events</a><a href="./leadership.html">Leadership</a><a href="https://discord.gg/Wpt347rusk" target="_blank" rel="noreferrer">Discord ↗</a></nav>
 
-      <section class="wrap">
-        <div class="herostats">
-          <a class="stat" href="./research.html">
-            <span class="stat-num">51</span>
-            <span class="stat-label">Publications</span>
-          </a>
-          <a class="stat" href="https://huggingface.co/TheFinAI" target="_blank" rel="noreferrer">
-            <span class="stat-num">304</span>
-            <span class="stat-label">Datasets</span>
-          </a>
-          <a class="stat" href="https://huggingface.co/TheFinAI" target="_blank" rel="noreferrer">
-            <span class="stat-num">40</span>
-            <span class="stat-label">Models</span>
-          </a>
-          <a class="stat" href="./research.html">
-            <span class="stat-num">22</span>
-            <span class="stat-label">Talks</span>
-          </a>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <canvas id="flow" aria-hidden="true"></canvas>
+    <div class="wrap hero-grid">
+      <div>
+        <a class="award reveal-up" style="transition-delay:.1s" href="https://gfmag.com/award/award-winners/best-financial-innovation-labs-2026/" target="_blank" rel="noreferrer">
+          <span class="medal">★</span>Global Finance · <b>World’s Best Financial Innovation Labs 2026</b> →
+        </a>
+        <h1 class="split" id="title">The Fin AI</h1>
+        <p class="hero-sub reveal-up" style="transition-delay:.55s"><em>Open-source</em>, <em>trustworthy</em> Financial General&nbsp;Intelligence.</p>
+        <p class="lead reveal-up" style="transition-delay:.7s">A global academy where researchers, engineers, and financial experts pursue it together — through
+          <span class="rotator" id="rotator"><span class="on">open research.</span><span>education.</span><span>incubation.</span><span>community.</span></span></p>
+        <div class="hero-ctas reveal-up" style="transition-delay:.85s">
+          <a class="btn btn--lg magnetic join" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer">Join the Community <span class="arrow">→</span></a>
+          <a class="btn btn--lg btn--ghost magnetic" href="#groups">Explore research</a>
+          <a class="btn btn--lg btn--discord magnetic join" href="https://discord.gg/Wpt347rusk" target="_blank" rel="noreferrer"><svg class="dc" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.4A19.6 19.6 0 0 0 15.4 3l-.6 1.3a18 18 0 0 0-5.6 0L8.6 3a19.6 19.6 0 0 0-4.9 1.4C.6 9 0 13.6.3 18.1a19.8 19.8 0 0 0 6 3l1.3-2.1a12.8 12.8 0 0 1-2-1l.5-.4a14 14 0 0 0 11.9 0l.5.4c-.6.4-1.3.7-2 1l1.3 2.1a19.7 19.7 0 0 0 6-3c.5-5.2-.8-9.7-3.5-13.7ZM8.7 15.4c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Zm6.6 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Z"/></svg>Join our Discord</a>
         </div>
-      </section>
-
-      <div class="wrap">
-        <div class="eventstrip">
-          <a href="./finnlp-2026.html">
-            <span class="tag">Upcoming</span>
-            <span class="title">FinNLP 2026 Workshop</span>
-            <span class="when">Oct 24–29, 2026 · Budapest · collocated with EMNLP 2026</span>
-            <span class="go">Details →</span>
-          </a>
-          <a href="./webinar-series.html">
-            <span class="tag">Ongoing</span>
-            <span class="title">SIG-FinTech × The Fin AI Webinar Series</span>
-            <span class="when">Online · co-hosted with ACL SIG-FinTech</span>
-            <span class="go">Details →</span>
-          </a>
-          <a href="./symposium-2026.html">
-            <span class="tag">Held</span>
-            <span class="title">The Fin AI Symposium 2026</span>
-            <span class="when">July 3, 2026 · San Diego · collocated with ACL 2026</span>
-            <span class="go">Recap →</span>
-          </a>
+        <div class="terms hero-terms reveal-up" style="transition-delay:1s">
+          <span class="term"><i>✓</i>Open-source license</span>
+          <a class="term" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer"><i>✓</i>CLA in the join form</a>
+          <span class="term"><i>✓</i>No other commitments</span>
         </div>
       </div>
 
-      <section class="pillars wrap">
-        <article id="education" class="pillar">
-          <span class="num">01</span>
-          <h2>Education</h2>
-          <p>
-            Bringing and educating the next generation of financial AI
-            researchers and talents through courses, study groups, and
-            hands-on learning.
-          </p>
-        </article>
-        <article id="research" class="pillar">
-          <span class="num">02</span>
-          <h2>Research</h2>
-          <p>
-            Driving rigorous and transparent research with open benchmarks,
-            models, and agent systems that advance the science of financial AI.
-          </p>
-          <a class="more" href="./research.html">Publications &amp; talks →</a>
-        </article>
-        <article id="incubation" class="pillar">
-          <span class="num">03</span>
-          <h2>Incubation</h2>
-          <p>
-            Transforming ideas into impactful financial AI solutions by
-            supporting early-stage teams with guidance, resources, and
-            real-world use cases.
-          </p>
-        </article>
-      </section>
-
-      <section id="leadership" class="section wrap home-people">
-        <p class="kicker">Leadership</p>
-        <h2 class="sec-h2">The people behind The Fin AI</h2>
-        <div class="people people--compact">
-          <div class="person">
-            <div class="photo"><span class="initials">JN</span><img src="./images/jian-yun-nie.jpg" alt="Jian-yun Nie" onerror="this.style.display='none'" /></div>
-            <div class="name">Jian-yun Nie</div>
-            <div class="role">Steering</div>
+      <div class="reveal-up" style="transition-delay:1s">
+        <a class="event-card tilt" href="./finnlp-2026.html">
+          <span class="glare"></span>
+          <div class="ec-top"><span>Next up</span><span class="live"><span class="dot"></span>Upcoming</span></div>
+          <h3>FinNLP 2026 Workshop</h3>
+          <p class="meta">Oct 24–29, 2026 · Budapest · collocated with EMNLP 2026</p>
+          <div class="count" data-until="2026-10-24T09:00:00+02:00">
+            <div><b data-k="d">00</b><small>Days</small></div>
+            <div><b data-k="h">00</b><small>Hrs</small></div>
+            <div><b data-k="m">00</b><small>Min</small></div>
+            <div><b data-k="s">00</b><small>Sec</small></div>
           </div>
-          <div class="person">
-            <div class="photo"><span class="initials">SL</span><img src="./images/steve-liu.jpg" alt="Steve Liu" onerror="this.style.display='none'" /></div>
-            <div class="name">Steve Liu</div>
-            <div class="role">Steering</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">SA</span><img src="./images/sophia-ananiadou.jpg" alt="Sophia Ananiadou" onerror="this.style.display='none'" /></div>
-            <div class="name">Sophia Ananiadou</div>
-            <div class="role">Steering</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">AL</span><img src="./images/alejandro-lopez-lira.jpg" alt="Alejandro Lopez-Lira" onerror="this.style.display='none'" /></div>
-            <div class="name">Alejandro Lopez-Lira</div>
-            <div class="role">Executive Chair</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">XC</span><img src="./images/xi-chen.jpg" alt="Xi Chen" onerror="this.style.display='none'" /></div>
-            <div class="name">Xi Chen</div>
-            <div class="role">Executive</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">YT</span><img src="./images/yuehua-tang.jpg" alt="Yuehua Tang" onerror="this.style.display='none'" /></div>
-            <div class="name">Yuehua Tang</div>
-            <div class="role">Executive</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">MD</span><img src="./images/michal-dzielinski.jpg" alt="Michał Dzieliński" onerror="this.style.display='none'" /></div>
-            <div class="name">Michał Dzieliński</div>
-            <div class="role">Executive</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">XP</span><img src="./images/xueqing-peng.jpg" alt="Xueqing Peng" onerror="this.style.display='none'" /></div>
-            <div class="name">Dr. Xueqing Peng</div>
-            <div class="role">Community Secretary</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">YW</span><img src="./images/yan-wang.jpg" alt="Yan Wang" onerror="this.style.display='none'" /></div>
-            <div class="name">Dr. Yan Wang</div>
-            <div class="role">NA · Chair</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">LQ</span><img src="./images/lingfei-qian.jpg" alt="Lingfei Qian" onerror="this.style.display='none'" /></div>
-            <div class="name">Dr. Lingfei Qian</div>
-            <div class="role">NA · Secretary</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">YJ</span><img src="./images/yuechen-jiang.jpg" alt="Yuechen Jiang" onerror="this.style.display='none'" /></div>
-            <div class="name">Yuechen Jiang</div>
-            <div class="role">EU · Chair</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">YW</span><img src="./images/yuyan-wang.jpg" alt="Yuyan Wang" onerror="this.style.display='none'" /></div>
-            <div class="name">Yuyan Wang</div>
-            <div class="role">EU · Secretary</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">ZX</span><img src="./images/zhuohan-xie.jpg" alt="Zhuohan Xie" onerror="this.style.display='none'" /></div>
-            <div class="name">Dr. Zhuohan Xie</div>
-            <div class="role">APAC · Chair</div>
-          </div>
-          <div class="person">
-            <div class="photo"><span class="initials">YC</span><img src="./images/yankai-chen.jpg" alt="Yankai Chen" onerror="this.style.display='none'" /></div>
-            <div class="name">Dr. Yankai Chen</div>
-            <div class="role">APAC · Secretary</div>
-          </div>
-        </div>
-        <p class="see-all"><a href="./leadership.html">See all leadership — Board, Steering &amp; Executive committees →</a></p>
-      </section>
-
-      <section id="working-groups" class="section wrap">
-        <p class="kicker">Working Groups</p>
-        <h2 class="sec-h2">Five research lines, one open community</h2>
-        <div class="wg-grid">
-          <article class="wg">
-            <h3>Model</h3>
-            <p class="wg-desc">Open financial LLMs — training, reasoning, alignment.</p>
-            <p class="wg-lead">Lead · Lingfei Qian</p>
-            <ul class="wg-works">
-              <li><a href="https://arxiv.org/abs/2306.05443" target="_blank" rel="noreferrer">PIXIU</a><span class="wg-venue">NeurIPS 2023</span></li>
-              <li><a href="https://arxiv.org/abs/2408.11878" target="_blank" rel="noreferrer">Open-FinLLMs</a><span class="wg-venue wg-venue--pre">preprint</span></li>
-              <li><a href="https://arxiv.org/abs/2502.08127" target="_blank" rel="noreferrer">Fino1</a><span class="wg-venue">IPM 2026</span></li>
-            </ul>
-          </article>
-          <article class="wg">
-            <h3>Agent</h3>
-            <p class="wg-desc">Agentic systems for trading, decisions, and long-horizon workflows.</p>
-            <p class="wg-lead">Lead · Yupeng Cao, Haohang Li</p>
-            <ul class="wg-works">
-              <li><a href="https://arxiv.org/abs/2605.14355" target="_blank" rel="noreferrer">Herculean</a><span class="wg-venue wg-venue--pre">preprint</span></li>
-              <li><a href="https://arxiv.org/abs/2407.06567" target="_blank" rel="noreferrer">FinCon</a><span class="wg-venue">NeurIPS 2024</span></li>
-              <li><a href="https://arxiv.org/abs/2510.11695" target="_blank" rel="noreferrer">When Agents Trade</a><span class="wg-venue">WWW 2026</span></li>
-            </ul>
-          </article>
-          <article class="wg">
-            <h3>Multilingual &amp; Multimodal</h3>
-            <p class="wg-desc">Cross-lingual, low-resource, and multimodal financial understanding.</p>
-            <p class="wg-lead">Lead · Xueqing Peng</p>
-            <ul class="wg-works">
-              <li><a href="https://arxiv.org/abs/2506.14028" target="_blank" rel="noreferrer">MultiFinBen</a><span class="wg-venue">ACL 2026</span></li>
-              <li><a href="https://arxiv.org/abs/2502.18772" target="_blank" rel="noreferrer">Plutus</a><span class="wg-venue">EMNLP 2025</span></li>
-              <li><a href="https://arxiv.org/abs/2402.07405" target="_blank" rel="noreferrer">Dólares or Dollars?</a><span class="wg-venue">KDD 2024</span></li>
-            </ul>
-          </article>
-          <article class="wg">
-            <h3>Misinformation &amp; Trust</h3>
-            <p class="wg-desc">Detecting financial misinformation and verifying claims.</p>
-            <p class="wg-lead">Lead · Zhiwei Liu</p>
-            <ul class="wg-works">
-              <li><a href="https://arxiv.org/abs/2601.04160" target="_blank" rel="noreferrer">All That Glisters</a><span class="wg-venue">ACL 2026</span></li>
-              <li><a href="https://arxiv.org/abs/2601.05403" target="_blank" rel="noreferrer">Same Claim, Different Judgment</a><span class="wg-venue">ACL Findings 2026</span></li>
-              <li><a href="https://arxiv.org/abs/2409.16452" target="_blank" rel="noreferrer">FMD-Llama</a><span class="wg-venue">WWW 2025</span></li>
-            </ul>
-          </article>
-          <article class="wg">
-            <h3>IR &amp; IE</h3>
-            <p class="wg-desc">Retrieval and structured extraction from financial documents.</p>
-            <p class="wg-lead">Lead · Yan Wang</p>
-            <ul class="wg-works">
-              <li><a href="https://arxiv.org/abs/2505.20650" target="_blank" rel="noreferrer">FinTagging</a><span class="wg-venue wg-venue--pre">preprint</span></li>
-              <li><a href="https://arxiv.org/abs/2510.08886" target="_blank" rel="noreferrer">FinAuditing</a><span class="wg-venue">SIGIR 2026</span></li>
-              <li><a href="https://arxiv.org/abs/2602.16990" target="_blank" rel="noreferrer">Conv-FinRe</a><span class="wg-venue">SIGIR 2026</span></li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="community" class="community">
-        <div class="wrap community-inner">
-          <h2>Bridging AI and Finance Through People</h2>
-          <p>
-            A strong community of researchers, engineers, and financial experts
-            is the driving force behind bridging AI and finance.
-          </p>
-          <a
-            class="btn btn--lg"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header"
-            target="_blank"
-            rel="noreferrer"
-            >Join the Community</a
-          >
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="wrap">
-        <div class="footer-top">
-          <div class="footer-brand">
-            <span class="brand"><img src="./images/finai-logo.png" alt="" />The Fin AI</span>
-            <p class="footer-tagline">A global academy advancing Financial General Intelligence through education, open research, and incubation.</p>
-          </div>
-          <nav class="footer-col">
-            <h4>Explore</h4>
-            <ul>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./leadership.html">Leadership</a></li>
-              <li><a href="./policies.html">Policies</a></li>
-              <li><a href="./research.html">Research</a></li>
-              <li><a href="./events.html">Events</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-col">
-            <h4>Connect</h4>
-            <ul>
-              <li><a href="https://groups.google.com/g/the-fin-ai" target="_blank" rel="noreferrer">Google Groups</a></li>
-              <li><a href="https://huggingface.co/TheFinAI" target="_blank" rel="noreferrer">Hugging Face</a></li>
-              <li><a href="https://www.youtube.com/@TheFinAI-g6j/featured" target="_blank" rel="noreferrer">YouTube</a></li>
-              <li><a href="https://scholar.google.com/citations?hl=en&view_op=list_works&user=P3Mxb4kAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer-bottom">
-          <div class="footer-partners">
-            <a href="https://sigfintech.github.io/" target="_blank" rel="noreferrer"><img src="./images/partner-sigfintech.png" alt="SIG FinTech" /></a>
-            <a href="https://www.nactem.ac.uk/" target="_blank" rel="noreferrer"><img src="./images/partner-nactem.png" alt="NACTEM" /></a>
-            <a href="#" rel="noreferrer"><img src="./images/partner-3.png" alt="Cyber-Physical Intelligence Lab" /></a>
-          </div>
-          <span class="copy">© 2026 The Fin AI · AI Readiness in Finance</span>
-        </div>
+          <div class="ec-link"><span>Workshop details</span><span class="arrow">→</span></div>
+        </a>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="scroll-hint"><span>Scroll</span><i></i></div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-label="Open-source projects">
+    <div class="ticker-track" id="ticker"></div>
+  </div>
+
+  <!-- STATS -->
+  <section class="section" style="padding-bottom:60px">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="kicker">Open by default</span><h2 class="sec-h2">Everything we build is shared with the field</h2></div>
+        <p>Papers, datasets, models, and talks — released openly on arXiv, Hugging Face, and YouTube.</p>
+      </div>
+      <div class="stats">
+        <a class="stat" data-reveal style="--i:0" href="./research.html"><div class="stat-top">Publications<span class="go">↗</span></div><span class="stat-num" data-count="51">0</span><svg class="spark" viewBox="0 0 200 42" preserveAspectRatio="none" data-seed="1"></svg></a>
+        <a class="stat" data-reveal style="--i:1" href="https://huggingface.co/TheFinAI" target="_blank" rel="noreferrer"><div class="stat-top">Datasets<span class="go">↗</span></div><span class="stat-num" data-count="304">0</span><svg class="spark" viewBox="0 0 200 42" preserveAspectRatio="none" data-seed="2"></svg></a>
+        <a class="stat" data-reveal style="--i:2" href="https://huggingface.co/TheFinAI" target="_blank" rel="noreferrer"><div class="stat-top">Models<span class="go">↗</span></div><span class="stat-num" data-count="40">0</span><svg class="spark" viewBox="0 0 200 42" preserveAspectRatio="none" data-seed="3"></svg></a>
+        <a class="stat" data-reveal style="--i:3" href="./research.html"><div class="stat-top">Talks<span class="go">↗</span></div><span class="stat-num" data-count="22">0</span><svg class="spark" viewBox="0 0 200 42" preserveAspectRatio="none" data-seed="4"></svg></a>
+      </div>
+      <svg width="0" height="0" style="position:absolute"><defs><linearGradient id="sg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#68a8d8" stop-opacity=".35"/><stop offset="1" stop-color="#68a8d8" stop-opacity="0"/></linearGradient></defs></svg>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section class="section" id="pillars" style="padding-top:60px">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="kicker">What we do</span><h2 class="sec-h2">Three pillars, one mission</h2></div>
+      </div>
+      <div class="pillars">
+        <article class="pillar spot" data-reveal style="--i:0">
+          <div class="pillar-top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg></span><span class="num">01</span></div>
+          <h3>Education</h3>
+          <p>Bringing and educating the next generation of financial AI researchers and talents through courses, study groups, and hands-on learning.</p>
+          <a class="more" href="./webinar-series.html">Webinar series <span class="arrow">→</span></a>
+        </article>
+        <article class="pillar spot" data-reveal style="--i:1">
+          <div class="pillar-top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M5 16l4-5 4 3 6-8"/><circle cx="19" cy="6" r="1.5"/></svg></span><span class="num">02</span></div>
+          <h3>Research</h3>
+          <p>Driving rigorous and transparent research with open benchmarks, models, and agent systems that advance the science of financial AI.</p>
+          <a class="more" href="./research.html">Publications &amp; talks <span class="arrow">→</span></a>
+        </article>
+        <article class="pillar spot" data-reveal style="--i:2">
+          <div class="pillar-top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 2 5 5 5 9l-2 4H9l-2-4c0-4 2-7 5-9z"/><circle cx="12" cy="10" r="1.6"/><path d="M9 16l-2 4M15 16l2 4"/></svg></span><span class="num">03</span></div>
+          <h3>Incubation</h3>
+          <p>Transforming ideas into impactful financial AI solutions by supporting early-stage teams with guidance, resources, and real-world use cases.</p>
+          <a class="more" href="./about.html">About The Fin AI <span class="arrow">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKING GROUPS -->
+  <section class="section" id="groups" style="padding-top:40px">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="kicker">Working groups</span><h2 class="sec-h2">Four research lines, one open community</h2></div>
+        <p>Each group ships open benchmarks, models, and papers — here are a few highlights.</p>
+      </div>
+      <div class="wg-wrap" id="wg" data-reveal>
+        <div class="wg-tabs" role="tablist" id="wgTabs"><span class="wg-ind" id="wgInd"></span></div>
+        <div class="wg-panel" id="wgPanel" role="tabpanel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="section" id="events" style="padding-top:40px">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="kicker">Events</span><h2 class="sec-h2">Where the community meets</h2></div>
+        <a class="link-u" href="./events.html">All events →</a>
+      </div>
+      <div class="events">
+        <a class="ev" data-reveal style="--i:0" href="./finnlp-2026.html"><span class="tag upcoming"><span class="dot"></span>Upcoming</span><h3>FinNLP 2026 Workshop</h3><p class="when">Oct 24–29, 2026 · Budapest · collocated with EMNLP 2026</p><span class="go">Details<span class="circle">→</span></span></a>
+        <a class="ev" data-reveal style="--i:1" href="./webinar-series.html"><span class="tag ongoing"><span class="dot"></span>Ongoing</span><h3>SIG-FinTech × The Fin AI Webinar Series</h3><p class="when">Online · co-hosted with ACL SIG-FinTech</p><span class="go">Details<span class="circle">→</span></span></a>
+        <a class="ev" data-reveal style="--i:2" href="./symposium-2026.html"><span class="tag held">Held</span><h3>The Fin AI Symposium 2026</h3><p class="when">July 3, 2026 · San Diego · collocated with ACL 2026</p><span class="go">Recap<span class="circle">→</span></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PEOPLE -->
+  <section class="section" id="people" style="padding-top:40px">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="kicker">Leadership</span><h2 class="sec-h2">The people behind The Fin AI</h2></div>
+        <p>Guided by a steering committee, run by an executive team, and carried by regional chapters around the world.</p>
+      </div>
+      <div class="tier" data-reveal>
+        <div class="tier-label"><span class="badge steer">★ Steering</span><h3>Steering Committee</h3></div>
+        <div class="steer-grid" id="steerGrid"></div>
+      </div>
+      <div class="tier" data-reveal>
+        <div class="tier-label"><span class="badge exec">◆ Executive</span><h3>Executive Committee</h3></div>
+        <div class="exec-grid" id="execGrid"></div>
+      </div>
+      <p class="see-all" data-reveal><a class="link-u" href="./leadership.html">See all leadership — Board, Steering &amp; Executive committees →</a></p>
+    </div>
+  </section>
+
+  <!-- CHAPTERS -->
+  <section class="section chapters" id="chapters">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="kicker">Global community</span><h2 class="sec-h2">Three chapters, one community</h2></div>
+        <p>Wherever you are, there’s a chapter near you — local chairs and secretaries who welcome newcomers and connect you to the rest of the academy.</p>
+      </div>
+      <div class="ch-list" id="chList"></div>
+    </div>
+  </section>
+
+  <!-- FIND YOUR WAY IN -->
+  <section class="section" id="join">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="kicker">Get involved</span><h2 class="sec-h2">There’s a place for you here</h2></div>
+        <p>Students, researchers, engineers, finance professionals, founders — tell us who you are and we’ll show you where to start.</p>
+      </div>
+      <div class="persona" id="persona" data-reveal><span class="lbl">I’m a…</span></div>
+      <div class="paths" id="paths"></div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section class="community" id="community">
+    <div class="mesh"><i></i><i></i><i></i></div>
+    <div class="grid"></div>
+    <div class="wrap" data-reveal>
+      <div class="crowd" id="crowd"></div>
+      <h2><span class="rotator welcome" data-ms="2200"><span class="on">Welcome</span><span>欢迎</span><span>Bienvenue</span><span>Willkommen</span><span>ようこそ</span><span>Bienvenido</span><span>Witamy</span><span>Benvenuto</span></span><br>there’s a seat for <em>you</em>.</h2>
+      <p>A strong community of researchers, engineers, and financial experts is the driving force behind bridging AI and finance. Pull up a chair.</p>
+      <a class="btn btn--lg btn--light magnetic join" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer">Join the Community <span class="arrow">→</span></a>
+      <a class="btn btn--lg btn--discord-dark magnetic join" href="https://discord.gg/Wpt347rusk" target="_blank" rel="noreferrer" style="margin-left:10px"><svg class="dc" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.4A19.6 19.6 0 0 0 15.4 3l-.6 1.3a18 18 0 0 0-5.6 0L8.6 3a19.6 19.6 0 0 0-4.9 1.4C.6 9 0 13.6.3 18.1a19.8 19.8 0 0 0 6 3l1.3-2.1a12.8 12.8 0 0 1-2-1l.5-.4a14 14 0 0 0 11.9 0l.5.4c-.6.4-1.3.7-2 1l1.3 2.1a19.7 19.7 0 0 0 6-3c.5-5.2-.8-9.7-3.5-13.7ZM8.7 15.4c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Zm6.6 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Z"/></svg>Join our Discord</a>
+      <p class="note">Open to everyone, worldwide. One form, including our CLA — no other commitments.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand"><img src="./images/finai-logo.png" alt="" />The Fin AI</span>
+        <p class="footer-tagline">A global academy advancing Financial General Intelligence through education, open research, and incubation.</p>
+        <p class="founders">Founded by <span>Qianqian Xie</span>, <span>Alejandro Lopez-Lira</span>, <span>Sophia Ananiadou</span>, <span>Jian-yun Nie</span>, and <span>Jimin Huang</span>.</p>
+      </div>
+      <nav><h4>Explore</h4><ul>
+        <li><a href="./about.html">About</a></li><li><a href="./leadership.html">Leadership</a></li><li><a href="./policies.html">Policies</a></li><li><a href="./research.html">Research</a></li><li><a href="./events.html">Events</a></li>
+      </ul></nav>
+      <nav><h4>Connect</h4><ul>
+        <li><a href="https://github.com/The-FinAI" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><a href="https://discord.gg/Wpt347rusk" target="_blank" rel="noreferrer">Discord</a></li>
+        <li><a href="https://groups.google.com/g/the-fin-ai" target="_blank" rel="noreferrer">Google Groups</a></li>
+        <li><a href="https://huggingface.co/TheFinAI" target="_blank" rel="noreferrer">Hugging Face</a></li>
+        <li><a href="https://www.youtube.com/@TheFinAI-g6j/featured" target="_blank" rel="noreferrer">YouTube</a></li>
+        <li><a href="https://scholar.google.com/citations?hl=en&view_op=list_works&user=P3Mxb4kAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a></li>
+      </ul></nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="partners">
+        <a href="https://sigfintech.github.io/" target="_blank" rel="noreferrer"><img src="./images/partner-sigfintech.png" alt="SIG FinTech" /></a>
+        <a href="https://www.nactem.ac.uk/" target="_blank" rel="noreferrer"><img src="./images/partner-nactem.png" alt="NACTEM" /></a>
+        <a href="#"><img src="./images/partner-3.png" alt="Cyber-Physical Intelligence Lab" /></a>
+      </div>
+      <span class="copy">© 2026 The Fin AI · AI Readiness in Finance</span>
+      <a href="#" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+    <div class="giant" aria-hidden="true">The Fin AI</div>
+  </div>
+</footer>
+
+<script src="./site.js"></script>
+<script>
+(() => {
+const { $, $$, reduce, io } = TFAI;
+
+/* ---------- data ---------- */
+const IMG = './images/';
+const FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header';
+const steering = [['Jian-yun Nie','jian-yun-nie'],['Steve Liu','steve-liu'],['Sophia Ananiadou','sophia-ananiadou']];
+const chair = ['Alejandro Lopez-Lira','alejandro-lopez-lira'];
+const execs = [['Xi Chen','xi-chen','Executive'],['Yuehua Tang','yuehua-tang','Executive'],['Michał Dzieliński','michal-dzielinski','Executive'],['Dr. Xueqing Peng','xueqing-peng','Community Secretary','comm']];
+const chapters = [
+  {k:'NA',name:'North America',c:'#0060b0',lat:40,lon:-95,tz:'America/New_York',tzl:'ET',chair:['Dr. Yan Wang','yan-wang'],sec:['Dr. Lingfei Qian','lingfei-qian']},
+  {k:'EU',name:'Europe',c:'#7c3aed',lat:50,lon:10,tz:'Europe/Paris',tzl:'CET',chair:['Yuechen Jiang','yuechen-jiang'],sec:['Yuyan Wang','yuyan-wang']},
+  {k:'APAC',name:'Asia-Pacific',c:'#e0662b',lat:22,lon:115,tz:'Asia/Singapore',tzl:'UTC+8',chair:['Dr. Zhuohan Xie','zhuohan-xie'],sec:['Dr. Yankai Chen','yankai-chen']}
+];
+const ICON = {
+  model:'<rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/>',
+  agent:'<rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4"/><circle cx="12" cy="3.5" r="1"/><circle cx="9" cy="14" r="1.2"/><circle cx="15" cy="14" r="1.2"/>',
+  multi:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3.5 3.5 3.5 14.5 0 18M12 3c-3.5 3.5-3.5 14.5 0 18"/>',
+  trust:'<path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>',
+  ir:'<path d="M14 3H6v18h6"/><path d="M14 3l4 4v5"/><circle cx="16.5" cy="17.5" r="3"/><path d="M18.7 19.7L21 22"/>'
+};
+const groups = [
+  {t:'Model',ic:'model',c:'#2f4fd0',cl:'#a5baff',d:'Open financial LLMs — training, reasoning, alignment.',l:'Lingfei Qian',w:[
+    ['PIXIU','2306.05443','NeurIPS 2023','Open <b>financial LLM</b>, data &amp; benchmark',1],
+    ['Open-FinLLMs','2408.11878','','<b>Multimodal</b>: text, tables, time series, charts',1],
+    ['Fino1','2502.08127','IPM 2026','Financial <b>reasoning</b> with open CoT + RL',1]]},
+  {t:'Agent',ic:'agent',c:'#0f7a5c',cl:'#6ee7b7',d:'Agentic systems for trading, decisions, and long-horizon workflows — across languages and modalities.',l:'Yupeng Cao, Haohang Li, Xueqing Peng',w:[
+    ['Herculean','2605.14355','','Can agents do <b>real financial work</b>?',1],
+    ['FinCon','2407.06567','NeurIPS 2024','A <b>multi-agent</b> investment team',0],
+    ['When Agents Trade','2510.11695','WWW 2026','Agents trading in <b>live markets</b>',1],
+    ['MultiFinBen','2506.14028','ACL 2026','<b>5 languages</b> · text, vision, audio',1]]},
+  {t:'Misinformation & Trust',ic:'trust',c:'#be123c',cl:'#fda4af',d:'Detecting financial misinformation and verifying claims.',l:'Zhiwei Liu',w:[
+    ['All That Glisters','2601.04160','ACL 2026','Fake financial news, <b>no reference needed</b>',0],
+    ['Same Claim, Different Judgment','2601.05403','ACL Findings 2026','Exposing <b>framing bias</b> in LLM fact-checks',0],
+    ['FMD-Llama','2409.16452','WWW 2025','Open LLM for <b>financial misinformation</b>',1]]},
+  {t:'IR & IE',ic:'ir',c:'#0e7490',cl:'#67e8f9',d:'Retrieval and structured extraction from financial documents.',l:'Yan Wang',w:[
+    ['FinTagging','2505.20650','','Facts mapped to <b>10K+ XBRL</b> concepts',0],
+    ['FinAuditing','2510.08886','SIGIR 2026','LLMs as <b>XBRL auditors</b>',0],
+    ['Conv-FinRe','2602.16990','SIGIR 2026','Advice judged by <b>long-term utility</b>',0]]}
+];
+const personas = [
+  {e:'🎓',l:'Student',p:[
+    ['Learn','Join a study group','Courses, study groups, and hands-on learning with peers across three continents.','Join the community',FORM],
+    ['Listen','Attend the webinar series','Talks from people at the frontier of financial AI, co-hosted with ACL SIG-FinTech.','Webinar series','./webinar-series.html'],
+    ['Build','Start from open benchmarks','Reproduce and extend PIXIU, FinBen and more — the code and data are open.','Browse our GitHub','https://github.com/The-FinAI']]},
+  {e:'🔬',l:'Researcher',p:[
+    ['Collaborate','Join a working group','Four research lines — models, agents, trust, and IR & IE — each open to new collaborators.','See working groups','#groups'],
+    ['Present','Share your work at our events','Workshops and symposia collocated with EMNLP and ACL.','Upcoming events','#events'],
+    ['Publish','Release openly with the community','Put datasets and models on Hugging Face alongside 300+ others.','Hugging Face','https://huggingface.co/TheFinAI']]},
+  {e:'💻',l:'Engineer',p:[
+    ['Contribute','Ship to open-source repos','Evaluation frameworks, agents, and training code live on GitHub — issues and PRs welcome.','Browse our GitHub','https://github.com/The-FinAI'],
+    ['Evaluate','Benchmark financial models','Run LLMs against open financial benchmarks and compare results.','Explore Hugging Face','https://huggingface.co/TheFinAI'],
+    ['Build','Build financial agents','Work on trading and long-horizon workflows with the Agent group.','Agent working group','#groups',1]]},
+  {e:'📈',l:'Finance professional',p:[
+    ['Ground','Bring real-world problems','Your domain expertise shapes benchmarks that reflect how finance actually works.','Get in touch',FORM],
+    ['Speak','Share insights in a webinar','Bring a practitioner’s view to researchers and students.','Webinar series','./webinar-series.html'],
+    ['Protect','Fight financial misinformation','Help verify claims with the Misinformation & Trust group.','Trust working group','#groups',2]]},
+  {e:'🚀',l:'Founder',p:[
+    ['Incubate','Get early-stage support','Guidance, resources, and real-world use cases for teams turning ideas into financial AI products.','Reach out',FORM],
+    ['Meet','Find collaborators','Meet researchers and engineers at our symposium and workshops.','Events','#events'],
+    ['Partner','Partner with The Fin AI','Work with one of Global Finance’s World’s Best Financial Innovation Labs 2026.','About us','./about.html']]}
+];
+const repos = [['PIXIU',892],['trials',136],['Fino1',81],['FinCon',67],['CALM',67],['FinSeer',24],['FinBen',18],['FinTagging',14],['HARMONIC',13],['The-FinData',11],['Agent_Market_Arena',7],['FinAuditing',5]];
+const ini = n => n.replace(/^Dr\. /, '').split(/[\s-]+/).map(s => s[0]).slice(0, 2).join('');
+const photo = (n, img, extra = '') => `<div class="photo" ${extra}><span class="initials">${ini(n)}</span><img src="${IMG}${img}.jpg" alt="${n}" loading="lazy" onerror="this.remove()"></div>`;
+
+/* ---------- ticker: monthly citation gains (citations.json, refreshed monthly) ---------- */
+const setTicker = html => { const t = $('#ticker'); t.innerHTML = html + html; t.style.animationDuration = Math.max(30, t.scrollWidth / 2 / 55) + 's'; };
+setTicker(repos.map(([n, s]) => `<a class="tk" href="https://github.com/The-FinAI/${n}" target="_blank" rel="noreferrer"><span class="sym">${n}</span><span class="up">★ ${s}</span><span class="v">GitHub</span></a>`).join(''));
+const fmt = n => n.toLocaleString('en-US');
+const kfmt = n => n >= 1000 ? (n / 1000).toFixed(n >= 10000 ? 0 : 1) + 'k' : String(n);
+const HF = 'https://huggingface.co/api/';
+const HIDE = /private|shard|lm-eval|annotat|^test/i;   // internal repos we don't advertise
+Promise.allSettled([
+  fetch('citations.json').then(r => r.json()),
+  ...['models', 'datasets', 'spaces'].map(k => fetch(`${HF}${k}?author=TheFinAI&limit=1000${k === 'spaces' ? '' : '&expand[]=downloads&expand[]=likes'}`).then(r => r.json()))
+]).then(([cit, mod, dat, spa]) => {
+  let html = '';
+  if (cit.status === 'fulfilled') {
+    const c = cit.value, gain = c.papers.reduce((a, p) => a + p.monthly, 0);
+    html += `<span class="tk tk-head"><span class="sym">CITATIONS</span><span class="up">▲ +${gain}</span><span class="v">${c.month} · ${fmt(c.total)} total</span></span>`;
+    html += c.papers.filter(p => p.monthly > 0).map(p =>
+      `<a class="tk" href="https://arxiv.org/abs/${p.arxiv}" target="_blank" rel="noreferrer" title="${p.title.replace(/"/g, '&quot;')}"><span class="sym">${p.name}</span><span class="up">▲ +${p.monthly}</span><span class="v">${fmt(p.total)}</span></a>`).join('');
+  }
+  const ok = r => r.status === 'fulfilled' && Array.isArray(r.value) ? r.value.filter(x => !HIDE.test(x.id.split('/')[1])) : null;
+  const M = ok(mod), D = ok(dat), S = ok(spa);
+  if (M || D || S) {
+    const dl = [...(M || []), ...(D || [])].reduce((a, x) => a + (x.downloads || 0), 0);
+    html += `<a class="tk tk-head tk-hf" href="https://huggingface.co/TheFinAI" target="_blank" rel="noreferrer"><span class="sym">🤗 HUGGING FACE</span><span class="up">↓ ${kfmt(dl)}</span><span class="v">downloads / 30 days</span></a>`;
+    const item = (kind, x, metric) => `<a class="tk" href="https://huggingface.co/${kind === 'space' ? 'spaces/' : kind === 'dataset' ? 'datasets/' : ''}${x.id}" target="_blank" rel="noreferrer"><span class="kind kind-${kind}">${kind}</span><span class="sym">${x.id.split('/')[1]}</span>${metric}</a>`;
+    const top = (arr, n) => (arr || []).filter(x => x.downloads > 0).sort((a, b) => b.downloads - a.downloads).slice(0, n);
+    html += top(M, 6).map(x => item('model', x, `<span class="up">↓ ${kfmt(x.downloads)}</span><span class="v">♥ ${x.likes}</span>`)).join('');
+    html += top(D, 8).map(x => item('dataset', x, `<span class="up">↓ ${kfmt(x.downloads)}</span><span class="v">♥ ${x.likes}</span>`)).join('');
+    html += (S || []).filter(x => x.likes > 0).sort((a, b) => b.likes - a.likes).map(x => item('space', x, `<span class="v">♥ ${x.likes}</span>`)).join('');
+  }
+  if (html) setTicker(html);
+});
+
+/* ---------- sparklines ---------- */
+$$('.spark').forEach(svg => {
+  let seed = +svg.dataset.seed * 9301; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+  const n = 14, pts = []; let v = 32;
+  for (let i = 0; i < n; i++) { v = Math.max(4, Math.min(38, v - (rnd() * 6 - 1.2) - i * .15)); pts.push([i / (n - 1) * 200, v]); }
+  let d = `M${pts[0][0]},${pts[0][1]}`;
+  for (let i = 1; i < n; i++) { const [x0, y0] = pts[i - 1], [x1, y1] = pts[i], cx = (x0 + x1) / 2; d += ` C${cx},${y0} ${cx},${y1} ${x1},${y1}`; }
+  svg.innerHTML = `<path class="ar" d="${d} L200,42 L0,42Z"/><path class="ln" d="${d}"/>`;
+  const ln = $('.ln', svg); svg.style.setProperty('--len', Math.ceil(ln.getTotalLength()));
+});
+
+/* ---------- working groups ---------- */
+const VIZ = {
+  model() {
+    const L = [[40, [50, 100, 150]], [100, [35, 80, 120, 165]], [160, [70, 130]]]; let s = '', p = '', n = 0;
+    for (let i = 0; i < 2; i++) for (const a of L[i][1]) for (const b of L[i + 1][1]) {
+      const ln = `x1="${L[i][0]}" y1="${a}" x2="${L[i + 1][0]}" y2="${b}"`;
+      s += `<line class="faint" ${ln}/>`;
+      if (n++ % 2 === 0) p += `<line class="pulse" style="animation-delay:${(n * .37 + i * 1.3) % 2.6}s" ${ln}/>`;
+    }
+    const nodes = L.map(([x, ys]) => ys.map((y, j) => `<circle cx="${x}" cy="${y}" r="7" fill="#0f1528" class="${(j + x) % 2 ? 'blink' : ''}" style="animation-delay:${x / 90}s"/>`).join('')).join('');
+    return `<g fill="none" stroke="currentColor" stroke-width="1.5">${s}${p}${nodes}</g>`;
+  },
+  agent() {
+    const rings = [38, 62, 86].map(r => `<circle class="faint" cx="100" cy="100" r="${r}" stroke-dasharray="3 5"/>`).join('');
+    const orbs = [[38, 6, 0, ''], [62, 10, 0, 'rev'], [62, 10, -5, 'rev'], [86, 15, 0, ''], [86, 15, -8, '']].map(([r, s, d, c]) =>
+      `<g class="orb ${c}" style="--s:${s}s;animation-delay:${d}s"><line class="faint" x1="100" y1="100" x2="${100 + r}" y2="100"/><circle cx="${100 + r}" cy="100" r="${r === 38 ? 5 : 6}" fill="currentColor"/></g>`).join('');
+    return `<g fill="none" stroke="currentColor" stroke-width="1.2">${rings}${orbs}<circle class="breath" cx="100" cy="100" r="15" fill="currentColor"/></g>`;
+  },
+  multi() {
+    const gl = ['$', '€', '¥', '£', '₹', '文', 'Ñ', 'ع'];
+    const t = gl.map((g, i) => { const a = i / gl.length * Math.PI * 2; return `<text class="self" x="${(100 + 72 * Math.cos(a)).toFixed(1)}" y="${(100 + 72 * Math.sin(a)).toFixed(1)}" text-anchor="middle" dominant-baseline="central" fill="currentColor" stroke="none" font-family="Newsreader,serif" font-size="21">${g}</text>`; }).join('');
+    return `<g fill="none" stroke="currentColor" stroke-width="1.4"><circle class="faint" cx="100" cy="100" r="72" stroke-dasharray="2 6"/>
+      <g class="orb" style="--s:36s">${t}</g>
+      <circle cx="100" cy="100" r="34"/><ellipse cx="100" cy="100" rx="14" ry="34"/><path d="M66 100h68M71 83h58M71 117h58" class="faint"/></g>`;
+  },
+  trust() {
+    const SH = 'M100 30 L155 50 V100 C155 135 130 160 100 172 C70 160 45 135 45 100 V50 Z';
+    const marks = [[25, 50, '✕'], [176, 70, '✓'], [20, 140, '✓'], [182, 150, '✕']].map(([x, y, m], i) =>
+      `<text class="blink" style="animation-delay:${i * .5}s" x="${x}" y="${y}" text-anchor="middle" fill="currentColor" font-size="15" font-family="Inter">${m}</text>`).join('');
+    return `<defs><clipPath id="shc"><path d="${SH}"/></clipPath></defs>
+      <path d="${SH}" fill="currentColor" fill-opacity=".08" stroke="currentColor" stroke-width="1.6"/>
+      <g clip-path="url(#shc)"><g class="scan"><rect x="40" y="99" width="120" height="2" fill="currentColor"/><rect x="40" y="101" width="120" height="20" fill="currentColor" opacity=".12"/></g></g>
+      <path class="drawchk" d="M78 102 L95 119 L126 84" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>${marks}`;
+  },
+  ir() {
+    const ys = [52, 68, 84, 100, 116, 132, 148], ws = [70, 58, 74, 50, 66, 72, 40], tags = { 1: 'Revenue', 3: 'EPS', 5: 'Date' };
+    let s = '';
+    ys.forEach((y, i) => {
+      const k = Object.keys(tags).indexOf(String(i)), d = k * .45;
+      if (tags[i]) s += `<rect class="hl" style="animation-delay:${d}s" x="44" y="${y - 7}" width="${ws[i]}" height="14" rx="3" fill="currentColor" opacity=".35"/>`;
+      s += `<rect x="44" y="${y - 2}" width="${ws[i]}" height="4" rx="2" fill="currentColor" opacity=".5"/>`;
+      if (tags[i]) s += `<g class="chip" style="animation-delay:${d}s"><path d="M${44 + ws[i] + 4} ${y}H140" stroke="currentColor" stroke-dasharray="2 3" opacity=".6"/><rect x="140" y="${y - 11}" width="58" height="22" rx="11" fill="currentColor"/><text x="169" y="${y + .5}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" font-family="Inter" fill="#0f1528">${tags[i]}</text></g>`;
+    });
+    return `<rect x="30" y="28" width="104" height="144" rx="10" fill="currentColor" fill-opacity=".06" stroke="currentColor" stroke-width="1.4"/>${s}`;
+  }
+};
+const tabs = $('#wgTabs'), panel = $('#wgPanel'), ind = $('#wgInd'), wg = $('#wg');
+panel.innerHTML = '<span class="wg-glow"></span><div id="wgContent"></div>';
+const wgContent = $('#wgContent');
+groups.forEach((g, i) => tabs.insertAdjacentHTML('beforeend', `<button class="wg-tab" role="tab" aria-selected="false" data-i="${i}"><span class="gi" style="--c:${g.c}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${ICON[g.ic]}</svg></span>${g.t}<span class="bar"><i></i></span></button>`));
+const tabBtns = $$('.wg-tab', tabs); let wgi = -1, wgTimer;
+function placeInd() { const b = tabBtns[wgi]; ind.style.height = b.offsetHeight + 'px'; ind.style.transform = `translateY(${b.offsetTop}px)`; }
+function showGroup(i) {
+  const changed = i !== wgi; wgi = i; const g = groups[i];
+  tabBtns.forEach((b, j) => b.setAttribute('aria-selected', j === i));
+  wg.style.setProperty('--gc', g.c); panel.style.setProperty('--c', g.c); panel.style.setProperty('--cl', g.cl);
+  placeInd();
+  if (tabs.scrollWidth > tabs.clientWidth) tabs.scrollTo({ left: tabBtns[i].offsetLeft - 16, behavior: 'smooth' });
+  if (changed) wgContent.innerHTML = `<div class="swap wg-body"><div>
+    <span class="kicker">Working group 0${i + 1}</span>
+    <h3 style="margin-top:14px">${g.t}</h3><p class="desc">${g.d}</p><p class="lead">Lead · ${g.l}</p>
+    <ul class="works">${g.w.map(([t, id, v, d, f]) => `<li><a href="https://arxiv.org/abs/${id}" target="_blank" rel="noreferrer"><span class="wt"><span class="tl"><span class="t">${t}</span>${f ? '<span class="first">★ First</span>' : ''}</span><span class="wd">${d}</span></span><span class="venue ${v ? '' : 'pre'}">${v || 'preprint'}</span><span class="ar">↗</span></a></li>`).join('')}</ul>
+    <div class="wg-foot"><small>Curious about ${g.t.toLowerCase()}? Come build with us.</small><a class="btn btn--light magnetic join" href="${FORM}" target="_blank" rel="noreferrer">Join this group <span class="arrow">→</span></a></div>
+    </div><svg class="viz" viewBox="0 0 200 200" aria-hidden="true">${VIZ[g.ic]()}</svg></div>`;
+  clearTimeout(wgTimer);
+  if (!reduce) wgTimer = setTimeout(() => { if (!wg.classList.contains('paused')) showGroup((wgi + 1) % groups.length); }, 7000);
+}
+tabBtns.forEach(b => b.addEventListener('click', () => showGroup(+b.dataset.i)));
+wg.addEventListener('pointerenter', () => wg.classList.add('paused'));
+wg.addEventListener('pointerleave', () => { wg.classList.remove('paused'); clearTimeout(wgTimer); wgTimer = setTimeout(() => showGroup((wgi + 1) % groups.length), 2500); });
+showGroup(0); addEventListener('resize', placeInd);
+
+/* ---------- leadership tiers ---------- */
+$('#steerGrid').innerHTML = steering.map(([n, img], i) => `<div class="lcard lcard--steer" data-reveal style="--i:${i}"><div class="ring-photo">${photo(n, img)}</div><div><div class="nm">${n}</div><div class="rl">★ Steering Committee</div></div></div>`).join('');
+$('#execGrid').innerHTML = `<div class="lcard lcard--chair" data-reveal><div class="ring-photo">${photo(...chair)}</div><div class="nm">${chair[0]}</div><div class="rl"><span class="chip-s">Chair</span>Executive Committee</div></div>` +
+  execs.map(([n, img, r, k], i) => `<div class="lcard lcard--exec ${k ? 'lcard--comm' : ''}" data-reveal style="--i:${i + 1}"><div class="ring-photo">${photo(n, img)}</div><div><div class="nm">${n}</div><div class="rl">${k ? '● ' : '◆ '}${r}</div></div></div>`).join('');
+$$('.lcard').forEach(el => io.observe(el));
+
+/* ---------- chapters ---------- */
+$('#chList').innerHTML = chapters.map((c, i) => `<div class="chapter" style="--rc:${c.c}" data-i="${i}" tabindex="0">
+  <div class="avs">${photo(...c.chair, `title="${c.chair[0]} · Chair"`)}${photo(...c.sec, `title="${c.sec[0]} · Secretary"`)}<span class="you" title="This seat could be yours">+</span></div>
+  <div><div class="ch-name">${c.name}</div><div class="ch-leads">Chair · ${c.chair[0]} &nbsp;·&nbsp; Secretary · ${c.sec[0]}</div><div class="ch-time"></div></div>
+  <a class="ch-join join" href="${FORM}" target="_blank" rel="noreferrer">Join ${c.k} <span class="arrow">→</span></a></div>`).join('');
+const chEls = $$('.chapter');
+chEls.forEach((el, i) => {
+  el.addEventListener('pointerenter', () => chEls.forEach(x => x.classList.toggle('on', x === el)));
+});
+$('#chList').addEventListener('pointerleave', () => chEls.forEach(x => x.classList.remove('on')));
+function clocks() {
+  $$('.ch-time').forEach((el, i) => {
+    const c = chapters[i], t = new Date().toLocaleTimeString('en-GB', { timeZone: c.tz, hour: '2-digit', minute: '2-digit' }), h = +t.slice(0, 2), day = h >= 6 && h < 19;
+    el.textContent = `${day ? '☀' : '☾'} ${t} ${c.tzl} · ${day ? 'daytime' : 'night owls'}`;
+  });
+}
+clocks(); setInterval(clocks, 15000);
+
+/* ---------- find your way in ---------- */
+const pBox = $('#persona'), paths = $('#paths');
+personas.forEach((p, i) => pBox.insertAdjacentHTML('beforeend', `<button aria-pressed="${i === 0}" data-i="${i}"><span class="e">${p.e}</span>${p.l}</button>`));
+function showPersona(i) {
+  $$('button', pBox).forEach(b => b.setAttribute('aria-pressed', +b.dataset.i === i));
+  paths.innerHTML = personas[i].p.map(([s, t, d, lt, h, wgIdx], k) => {
+    const ext = h.startsWith('http') ? 'target="_blank" rel="noreferrer"' : '';
+    return `<article class="path spot"><div class="step"><b>${k + 1}</b>${s}</div><h3>${t}</h3><p>${d}</p><a href="${h}" ${ext} class="${h === FORM ? 'join' : ''}" ${wgIdx != null ? `data-wg="${wgIdx}"` : ''}>${lt} <span class="arrow">→</span></a></article>`;
+  }).join('');
+  paths.classList.remove('swap'); void paths.offsetWidth; paths.classList.add('swap');
+}
+pBox.addEventListener('click', e => { const b = e.target.closest('button'); if (b) showPersona(+b.dataset.i); });
+paths.addEventListener('click', e => { const a = e.target.closest('[data-wg]'); if (a) showGroup(+a.dataset.wg); });
+showPersona(0);
+
+/* ---------- welcome crowd ---------- */
+const everyone = [...steering, chair, ...execs, ...chapters.flatMap(c => [c.chair, c.sec])];
+$('#crowd').innerHTML = everyone.map(([n, img], i) => photo(n, img, `style="--i:${i}" title="${n}"`)).join('') + '<span class="you" title="You!">You</span>';
+io.observe($('#crowd'));
+document.fonts && document.fonts.ready.then(placeInd);
+
+/* ---------- hero canvas: flowing market lines ---------- */
+const cv = $('#flow'), ctx = cv.getContext('2d');
+let W, H, DPR, mouse = { x: -999, y: -999 }, t = 0, visible = true;
+function size() { DPR = Math.min(2, devicePixelRatio || 1); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * DPR; cv.height = H * DPR; ctx.setTransform(DPR, 0, 0, DPR, 0, 0); }
+size(); addEventListener('resize', size);
+cv.parentElement.addEventListener('pointermove', e => { const r = cv.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
+cv.parentElement.addEventListener('pointerleave', () => { mouse.x = mouse.y = -999; });
+new IntersectionObserver(([e]) => visible = e.isIntersecting).observe(cv);
+const LINES = 16;
+const noise = (x, s) => Math.sin(x * .9 + s) * .5 + Math.sin(x * 2.1 + s * 1.7) * .25 + Math.sin(x * 4.3 + s * .6) * .12;
+function frame() {
+  if (visible) {
+    ctx.clearRect(0, 0, W, H);
+    for (let l = 0; l < LINES; l++) {
+      const base = H * (.18 + l / LINES * .75), amp = 26 + l * 3.2, seed = l * 1.37;
+      const a = .05 + (l / LINES) * .22;
+      ctx.beginPath();
+      for (let x = -10; x <= W + 10; x += 8) {
+        const nx = x / 220 + t * (.25 + l * .015);
+        let y = base + noise(nx, seed) * amp - (x / W) * 40;
+        const dx = x - mouse.x, dy = y - mouse.y, d2 = dx * dx + dy * dy;
+        if (d2 < 32000) y += (dy / Math.sqrt(d2 + 1)) * (1 - d2 / 32000) * 46;
+        x === -10 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = l % 4 === 0 ? `rgba(0,96,176,${a + .08})` : `rgba(24,56,152,${a})`;
+      ctx.lineWidth = l % 4 === 0 ? 1.4 : 1;
+      ctx.stroke();
+    }
+    // floating data nodes on the highlighted lines
+    for (let l = 0; l < LINES; l += 4) {
+      for (let k = 0; k < 3; k++) {
+        const x = ((t * 60 * (1 + k * .3) + k * W / 3 + l * 90) % (W + 40)) - 20;
+        const nx = x / 220 + t * (.25 + l * .015), base = H * (.18 + l / LINES * .75), amp = 26 + l * 3.2;
+        let y = base + noise(nx, l * 1.37) * amp - (x / W) * 40;
+        const dx = x - mouse.x, dy = y - mouse.y, d2 = dx * dx + dy * dy;
+        if (d2 < 32000) y += (dy / Math.sqrt(d2 + 1)) * (1 - d2 / 32000) * 46;
+        ctx.beginPath(); ctx.arc(x, y, 2.6, 0, 7); ctx.fillStyle = '#0060b0'; ctx.fill();
+        ctx.beginPath(); ctx.arc(x, y, 7, 0, 7); ctx.fillStyle = 'rgba(104,168,216,.25)'; ctx.fill();
+      }
+    }
+    t += reduce ? 0 : .004;
+  }
+  requestAnimationFrame(frame);
+}
+frame();
+})();
+</script>
+</body>
 </html>

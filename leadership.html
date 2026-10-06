@@ -1,216 +1,105 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leadership — The Fin AI</title>
-    <meta name="description" content="The Fin AI leadership: Board of Directors, Steering Committee, and Executive Committee." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="wrap nav">
-        <a href="./index.html" class="brand"><img src="./images/finai-logo-white.png" alt="" />The Fin AI</a>
-        <nav class="nav-links">
-          <a href="./index.html">Home</a>
-          <a href="./about.html">About</a>
-          <a href="./research.html">Research</a>
-          <a href="./events.html">Events</a>
-        </nav>
-        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer">Join the Community</a>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Leadership — The Fin AI</title>
+<meta name="description" content="The Board of Directors, Steering Committee, Executive Committee, and regional chapters of The Fin AI." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="header" id="header">
+  <div class="wrap nav">
+    <a href="./index.html" class="brand"><img src="./images/finai-logo.png" alt="" />The Fin AI</a>
+    <nav class="nav-links" id="navLinks"><span class="nav-pill"></span><a href="./index.html">Home</a><a href="./about.html">About</a><a href="./research.html">Research</a><a href="./events.html">Events</a><a href="./leadership.html" aria-current="page">Leadership</a></nav>
+    <a class="btn magnetic join" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer">Join the Community <span class="arrow">→</span></a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu"><a href="./index.html">Home</a><a href="./about.html">About</a><a href="./research.html">Research</a><a href="./events.html">Events</a><a href="./leadership.html">Leadership</a><a href="https://discord.gg/Wpt347rusk" target="_blank" rel="noreferrer">Discord ↗</a></nav>
+
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb reveal-up"><a href="./about.html">About</a><span class="sep"></span><span>Leadership</span></div>
+    <h1 class="split">The people guiding The Fin AI</h1>
+    <p class="lead reveal-up" style="transition-delay:.45s">Our leadership team brings together experts, providing strategic guidance, accountability, and transparency to drive innovation and ensure the long-term success of The Fin AI.</p>
+    
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px">
+  <div class="wrap tiers-wide">
+    <div class="tier" data-reveal>
+      <div class="tier-label"><span class="badge" style="background:var(--ink);color:#f6e3a8">■ Board</span><h3>Board of Directors</h3></div>
+      <div class="board-grid"><div class="lcard lcard--pres" data-reveal style="--i:0"><div class="ring-photo"><div class="photo"><span class="initials">JH</span><img src="./images/jimin-huang.jpg" alt="Jimin Huang" loading="lazy" onerror="this.remove()"></div></div><div><div class="nm">Jimin Huang</div><div class="rl">President · Board Member</div><div class="org">University of Manchester</div><a class="mail" href="mailto:jimin.huang@thefin.ai">jimin.huang@thefin.ai</a></div></div><div class="lcard lcard--exec lcard--board" data-reveal style="--i:1"><div class="ring-photo"><div class="photo"><span class="initials">CY</span><img src="./images/cheng-yao.jpg" alt="Cheng Yao" loading="lazy" onerror="this.remove()"></div></div><div><div class="nm">Cheng Yao</div><div class="rl">Board Member</div></div></div><div class="lcard lcard--exec lcard--board" data-reveal style="--i:2"><div class="ring-photo"><div class="photo"><span class="initials">WF</span><img src="./images/wei-feng.jpg" alt="Wei Feng" loading="lazy" onerror="this.remove()"></div></div><div><div class="nm">Wei Feng</div><div class="rl">Board Member</div></div></div></div>
+    </div>
+    <div class="tier" data-reveal>
+      <div class="tier-label"><span class="badge steer">★ Steering</span><h3>Steering Committee</h3></div>
+      <div class="steer-grid"><div class="lcard lcard--steer" data-reveal style="--i:0"><div class="ring-photo"><div class="photo"><span class="initials">Jy</span><img src="./images/jian-yun-nie.jpg" alt="Jian-yun Nie" loading="lazy" onerror="this.remove()"></div></div><div><div class="nm">Jian-yun Nie</div><div class="rl">★ Full Professor of Computer Science (DIRO)</div><div class="org">University of Montreal · RALI Lab</div></div></div><div class="lcard lcard--steer" data-reveal style="--i:1"><div class="ring-photo"><div class="photo"><span class="initials">SL</span><img src="./images/steve-liu.jpg" alt="Steve Liu" loading="lazy" onerror="this.remove()"></div></div><div><div class="nm">Steve Liu</div><div class="rl">★ Professor of Computer Science &amp; Machine Learning</div><div class="org">Mohamed bin Zayed University of Artificial Intelligence</div><div class="org">William Dawson Scholar &amp; Chair Professor, McGill University</div></div></div><div class="lcard lcard--steer" data-reveal style="--i:2"><div class="ring-photo"><div class="photo"><span class="initials">SA</span><img src="./images/sophia-ananiadou.jpg" alt="Sophia Ananiadou" loading="lazy" onerror="this.remove()"></div></div><div><div class="nm">Sophia Ananiadou</div><div class="rl">★ Professor of Computer Science; Director, NaCTeM</div><div class="org">University of Manchester</div></div></div></div>
+    </div>
+    <div class="tier" data-reveal>
+      <div class="tier-label"><span class="badge exec">◆ Executive</span><h3>Executive Committee</h3></div>
+      <div class="exec-grid exec-grid--page"><div class="lcard lcard--chair" data-reveal style="--i:0"><div class="ring-photo"><div class="photo"><span class="initials">AL</span><img src="./images/alejandro-lopez-lira.jpg" alt="Alejandro Lopez-Lira" loading="lazy" onerror="this.remove()"></div></div><div><div class="nm">Alejandro Lopez-Lira</div><div class="rl"><span class="chip-s">Executive Chair</span>Assistant Professor of Finance</div><div class="org">University of Florida</div></div></div><div class="lcard lcard--exec" data-reveal style="--i:1"><div class="ring-photo"><div class="photo"><span class="initials">XC</span><img src="./images/xi-chen.jpg" alt="Xi Chen" loading="lazy" onerror="this.remove()"></div></div><div><div class="nm">Xi Chen</div><div class="rl">◆ Professor of Technology, Operations &amp; Statistics</div><div class="org">NYU Stern School of Business · Andre Meyer Faculty Fellow</div></div></div><div class="lcard lcard--exec" data-reveal style="--i:2"><div class="ring-photo"><div class="photo"><span class="initials">YT</span><img src="./images/yuehua-tang.jpg" alt="Yuehua Tang" loading="lazy" onerror="this.remove()"></div></div><div><div class="nm">Yuehua Tang</div><div class="rl">◆ Scott J. Friedman Professor of AI in Finance</div><div class="org">University of Florida · Finance PhD Coordinator</div></div></div><div class="lcard lcard--exec" data-reveal style="--i:3"><div class="ring-photo"><div class="photo"><span class="initials">MD</span><img src="./images/michal-dzielinski.jpg" alt="Michał Dzieliński" loading="lazy" onerror="this.remove()"></div></div><div><div class="nm">Michał Dzieliński</div><div class="rl">◆ Senior Lecturer in Finance</div><div class="org">Stockholm Business School, Stockholm University</div><div class="org">Founder &amp; Chair, Future of Financial Information</div></div></div><div class="lcard lcard--exec lcard--comm" data-reveal style="--i:4"><div class="ring-photo"><div class="photo"><span class="initials">XP</span><img src="./images/xueqing-peng.jpg" alt="Dr. Xueqing Peng" loading="lazy" onerror="this.remove()"></div></div><div><div class="nm">Dr. Xueqing Peng</div><div class="rl">● Community Secretary</div></div></div></div>
+    </div>
+    <div class="tier" data-reveal>
+      <div class="tier-label"><span class="badge" style="background:#fdeee6;color:#b4471c">◎ Chapters</span><h3>Regional chapters</h3></div>
+      <div class="ch-list"><div class="chapter" style="--rc:#0060b0;--i:0" data-reveal><div class="avs"><div class="photo"><span class="initials">YW</span><img src="./images/yan-wang.jpg" alt="Dr. Yan Wang" loading="lazy" onerror="this.remove()"></div><div class="photo"><span class="initials">LQ</span><img src="./images/lingfei-qian.jpg" alt="Dr. Lingfei Qian" loading="lazy" onerror="this.remove()"></div><span class="you" title="This seat could be yours">+</span></div><div><div class="ch-name">North America</div><div class="ch-leads">Chair · Dr. Yan Wang &nbsp;·&nbsp; Secretary · Dr. Lingfei Qian</div></div><a class="ch-join join" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer">Join NA <span class="arrow">→</span></a></div><div class="chapter" style="--rc:#7c3aed;--i:1" data-reveal><div class="avs"><div class="photo"><span class="initials">YJ</span><img src="./images/yuechen-jiang.jpg" alt="Yuechen Jiang" loading="lazy" onerror="this.remove()"></div><div class="photo"><span class="initials">YW</span><img src="./images/yuyan-wang.jpg" alt="Yuyan Wang" loading="lazy" onerror="this.remove()"></div><span class="you" title="This seat could be yours">+</span></div><div><div class="ch-name">Europe</div><div class="ch-leads">Chair · Yuechen Jiang &nbsp;·&nbsp; Secretary · Yuyan Wang</div></div><a class="ch-join join" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer">Join EU <span class="arrow">→</span></a></div><div class="chapter" style="--rc:#e0662b;--i:2" data-reveal><div class="avs"><div class="photo"><span class="initials">ZX</span><img src="./images/zhuohan-xie.jpg" alt="Dr. Zhuohan Xie" loading="lazy" onerror="this.remove()"></div><div class="photo"><span class="initials">YC</span><img src="./images/yankai-chen.jpg" alt="Dr. Yankai Chen" loading="lazy" onerror="this.remove()"></div><span class="you" title="This seat could be yours">+</span></div><div><div class="ch-name">Asia-Pacific</div><div class="ch-leads">Chair · Dr. Zhuohan Xie &nbsp;·&nbsp; Secretary · Dr. Yankai Chen</div></div><a class="ch-join join" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer">Join APAC <span class="arrow">→</span></a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="community" style="margin-bottom:0">
+  <div class="mesh"><i></i><i></i><i></i></div>
+  <div class="grid"></div>
+  <div class="wrap" data-reveal>
+    <h2>Bridging AI and Finance <em>through people</em></h2>
+    <p>A strong community of researchers, engineers, and financial experts is the driving force behind bridging AI and finance.</p>
+    <a class="btn btn--lg btn--light magnetic join" href="https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header" target="_blank" rel="noreferrer">Join the Community <span class="arrow">→</span></a>
+    <a class="btn btn--lg btn--discord-dark magnetic join" href="https://discord.gg/Wpt347rusk" target="_blank" rel="noreferrer" style="margin-left:10px"><svg class="dc" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.4A19.6 19.6 0 0 0 15.4 3l-.6 1.3a18 18 0 0 0-5.6 0L8.6 3a19.6 19.6 0 0 0-4.9 1.4C.6 9 0 13.6.3 18.1a19.8 19.8 0 0 0 6 3l1.3-2.1a12.8 12.8 0 0 1-2-1l.5-.4a14 14 0 0 0 11.9 0l.5.4c-.6.4-1.3.7-2 1l1.3 2.1a19.7 19.7 0 0 0 6-3c.5-5.2-.8-9.7-3.5-13.7ZM8.7 15.4c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Zm6.6 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Z"/></svg>Join our Discord</a>
+    <p class="note">Open to everyone, worldwide. One form, including our CLA — no other commitments.</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand"><img src="./images/finai-logo.png" alt="" />The Fin AI</span>
+        <p class="footer-tagline">A global academy advancing Financial General Intelligence through education, open research, and incubation.</p>
+        <p class="founders">Founded by <span>Qianqian Xie</span>, <span>Alejandro Lopez-Lira</span>, <span>Sophia Ananiadou</span>, <span>Jian-yun Nie</span>, and <span>Jimin Huang</span>.</p>
       </div>
-    </header>
-
-    <main>
-      <section class="page-head wrap">
-        <p class="eyebrow">Leadership</p>
-        <h1>The people guiding The Fin AI</h1>
-        <p class="lead">
-          Our leadership team brings together experts, providing strategic
-          guidance, accountability, and transparency to drive innovation and
-          ensure the long-term success of The Fin AI.
-        </p>
-      </section>
-
-      <div class="wrap">
-        <section class="committee">
-          <p class="kicker">Board of Directors</p>
-          <div class="people">
-            <div class="person">
-              <div class="photo"><span class="initials">JH</span><img src="./images/jimin-huang.jpg" alt="Jimin Huang" onerror="this.style.display='none'" /></div>
-              <div class="name">Jimin Huang</div>
-              <div class="role">President, Board Member</div>
-              <div class="org">University of Manchester</div>
-              <div class="links"><a href="mailto:jimin.huang@thefin.ai">jimin.huang@thefin.ai</a></div>
-            </div>
-            <div class="person">
-              <div class="photo"><span class="initials">CY</span><img src="./images/cheng-yao.jpg" alt="Cheng Yao" onerror="this.style.display='none'" /></div>
-              <div class="name">Cheng Yao</div>
-              <div class="role">Board Member</div>
-            </div>
-            <div class="person">
-              <div class="photo"><span class="initials">WF</span><img src="./images/wei-feng.jpg" alt="Wei Feng" onerror="this.style.display='none'" /></div>
-              <div class="name">Wei Feng</div>
-              <div class="role">Board Member</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="committee">
-          <p class="kicker">Steering Committee</p>
-          <div class="people">
-            <div class="person">
-              <div class="photo"><span class="initials">JN</span><img src="./images/jian-yun-nie.jpg" alt="Jian-yun Nie" onerror="this.style.display='none'" /></div>
-              <div class="name">Jian-yun Nie</div>
-              <div class="role">Full Professor of Computer Science (DIRO)</div>
-              <div class="org">University of Montreal · RALI Lab</div>
-            </div>
-            <div class="person">
-              <div class="photo"><span class="initials">SL</span><img src="./images/steve-liu.jpg" alt="Steve Liu" onerror="this.style.display='none'" /></div>
-              <div class="name">Steve Liu</div>
-              <div class="role">Professor of Computer Science &amp; Machine Learning</div>
-              <div class="org">Mohamed bin Zayed University of Artificial Intelligence</div>
-              <div class="org">William Dawson Scholar &amp; Chair Professor, McGill University</div>
-            </div>
-            <div class="person">
-              <div class="photo"><span class="initials">SA</span><img src="./images/sophia-ananiadou.jpg" alt="Sophia Ananiadou" onerror="this.style.display='none'" /></div>
-              <div class="name">Sophia Ananiadou</div>
-              <div class="role">Professor of Computer Science; Director, NaCTeM</div>
-              <div class="org">University of Manchester</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="committee">
-          <p class="kicker">Executive Committee</p>
-          <div class="people">
-            <div class="person">
-              <div class="photo"><span class="initials">AL</span><img src="./images/alejandro-lopez-lira.jpg" alt="Alejandro Lopez-Lira" onerror="this.style.display='none'" /></div>
-              <div class="name">Alejandro Lopez-Lira</div>
-              <div class="role">Executive Chair · Assistant Professor of Finance</div>
-              <div class="org">University of Florida</div>
-            </div>
-            <div class="person">
-              <div class="photo"><span class="initials">XC</span><img src="./images/xi-chen.jpg" alt="Xi Chen" onerror="this.style.display='none'" /></div>
-              <div class="name">Xi Chen</div>
-              <div class="role">Professor of Technology, Operations &amp; Statistics; Andre Meyer Faculty Fellow</div>
-              <div class="org">NYU Stern School of Business</div>
-            </div>
-            <div class="person">
-              <div class="photo"><span class="initials">YT</span><img src="./images/yuehua-tang.jpg" alt="Yuehua Tang" onerror="this.style.display='none'" /></div>
-              <div class="name">Yuehua Tang</div>
-              <div class="role">Scott J. Friedman Professor of AI in Finance</div>
-              <div class="org">University of Florida · Finance PhD Coordinator</div>
-            </div>
-            <div class="person">
-              <div class="photo"><span class="initials">MD</span><img src="./images/michal-dzielinski.jpg" alt="Michał Dzieliński" onerror="this.style.display='none'" /></div>
-              <div class="name">Michał Dzieliński</div>
-              <div class="role">Senior Lecturer in Finance</div>
-              <div class="org">Stockholm Business School, Stockholm University · Founder &amp; Chair, Future of Financial Information</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="committee">
-          <p class="kicker">Community</p>
-          <div class="people">
-            <div class="person">
-              <div class="photo"><span class="initials">XP</span><img src="./images/xueqing-peng.jpg" alt="Xueqing Peng" onerror="this.style.display='none'" /></div>
-              <div class="name">Dr. Xueqing Peng</div>
-              <div class="role">Secretary</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="committee">
-          <p class="kicker">North America Chapter</p>
-          <div class="people">
-            <div class="person">
-              <div class="photo"><span class="initials">YW</span><img src="./images/yan-wang.jpg" alt="Yan Wang" onerror="this.style.display='none'" /></div>
-              <div class="name">Dr. Yan Wang</div>
-              <div class="role">Chair</div>
-            </div>
-            <div class="person">
-              <div class="photo"><span class="initials">LQ</span><img src="./images/lingfei-qian.jpg" alt="Lingfei Qian" onerror="this.style.display='none'" /></div>
-              <div class="name">Dr. Lingfei Qian</div>
-              <div class="role">Secretary</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="committee">
-          <p class="kicker">Europe Chapter</p>
-          <div class="people">
-            <div class="person">
-              <div class="photo"><span class="initials">YJ</span><img src="./images/yuechen-jiang.jpg" alt="Yuechen Jiang" onerror="this.style.display='none'" /></div>
-              <div class="name">Yuechen Jiang</div>
-              <div class="role">Chair</div>
-            </div>
-            <div class="person">
-              <div class="photo"><span class="initials">YW</span><img src="./images/yuyan-wang.jpg" alt="Yuyan Wang" onerror="this.style.display='none'" /></div>
-              <div class="name">Yuyan Wang</div>
-              <div class="role">Secretary</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="committee">
-          <p class="kicker">Asia-Pacific Chapter</p>
-          <div class="people">
-            <div class="person">
-              <div class="photo"><span class="initials">ZX</span><img src="./images/zhuohan-xie.jpg" alt="Zhuohan Xie" onerror="this.style.display='none'" /></div>
-              <div class="name">Dr. Zhuohan Xie</div>
-              <div class="role">Chair</div>
-            </div>
-            <div class="person">
-              <div class="photo"><span class="initials">YC</span><img src="./images/yankai-chen.jpg" alt="Yankai Chen" onerror="this.style.display='none'" /></div>
-              <div class="name">Dr. Yankai Chen</div>
-              <div class="role">Secretary</div>
-            </div>
-          </div>
-        </section>
+      <nav><h4>Explore</h4><ul>
+        <li><a href="./about.html">About</a></li><li><a href="./leadership.html">Leadership</a></li><li><a href="./policies.html">Policies</a></li><li><a href="./research.html">Research</a></li><li><a href="./events.html">Events</a></li>
+      </ul></nav>
+      <nav><h4>Connect</h4><ul>
+        <li><a href="https://github.com/The-FinAI" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><a href="https://discord.gg/Wpt347rusk" target="_blank" rel="noreferrer">Discord</a></li>
+        <li><a href="https://groups.google.com/g/the-fin-ai" target="_blank" rel="noreferrer">Google Groups</a></li>
+        <li><a href="https://huggingface.co/TheFinAI" target="_blank" rel="noreferrer">Hugging Face</a></li>
+        <li><a href="https://www.youtube.com/@TheFinAI-g6j/featured" target="_blank" rel="noreferrer">YouTube</a></li>
+        <li><a href="https://scholar.google.com/citations?hl=en&view_op=list_works&user=P3Mxb4kAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a></li>
+      </ul></nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="partners">
+        <a href="https://sigfintech.github.io/" target="_blank" rel="noreferrer"><img src="./images/partner-sigfintech.png" alt="SIG FinTech" /></a>
+        <a href="https://www.nactem.ac.uk/" target="_blank" rel="noreferrer"><img src="./images/partner-nactem.png" alt="NACTEM" /></a>
+        <a href="#"><img src="./images/partner-3.png" alt="Cyber-Physical Intelligence Lab" /></a>
       </div>
-    </main>
+      <span class="copy">© 2026 The Fin AI · AI Readiness in Finance</span>
+      <a href="#" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+    <div class="giant" aria-hidden="true">The Fin AI</div>
+  </div>
+</footer>
 
-    <footer class="footer">
-      <div class="wrap">
-        <div class="footer-top">
-          <div class="footer-brand">
-            <span class="brand"><img src="./images/finai-logo.png" alt="" />The Fin AI</span>
-            <p class="footer-tagline">A global academy advancing Financial General Intelligence through education, open research, and incubation.</p>
-          </div>
-          <nav class="footer-col">
-            <h4>Explore</h4>
-            <ul>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./leadership.html">Leadership</a></li>
-              <li><a href="./policies.html">Policies</a></li>
-              <li><a href="./research.html">Research</a></li>
-              <li><a href="./events.html">Events</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-col">
-            <h4>Connect</h4>
-            <ul>
-              <li><a href="https://groups.google.com/g/the-fin-ai" target="_blank" rel="noreferrer">Google Groups</a></li>
-              <li><a href="https://huggingface.co/TheFinAI" target="_blank" rel="noreferrer">Hugging Face</a></li>
-              <li><a href="https://www.youtube.com/@TheFinAI-g6j/featured" target="_blank" rel="noreferrer">YouTube</a></li>
-              <li><a href="https://scholar.google.com/citations?hl=en&view_op=list_works&user=P3Mxb4kAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer-bottom">
-          <div class="footer-partners">
-            <a href="https://sigfintech.github.io/" target="_blank" rel="noreferrer"><img src="./images/partner-sigfintech.png" alt="SIG FinTech" /></a>
-            <a href="https://www.nactem.ac.uk/" target="_blank" rel="noreferrer"><img src="./images/partner-nactem.png" alt="NACTEM" /></a>
-            <a href="#" rel="noreferrer"><img src="./images/partner-3.png" alt="Cyber-Physical Intelligence Lab" /></a>
-          </div>
-          <span class="copy">© 2026 The Fin AI · AI Readiness in Finance</span>
-        </div>
-      </div>
-    </footer>
-  </body>
+<script src="./site.js"></script>
+</body>
 </html>
