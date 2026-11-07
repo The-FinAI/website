@@ -248,7 +248,7 @@ const IMG = './images/';
 const FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSdhSTm9zsw8XJlACJBf5gbYRWEPeJGQC3JXPoSF2ryxHLeIOQ/viewform?usp=header';
 const steering = [['Jian-yun Nie','jian-yun-nie'],['Steve Liu','steve-liu'],['Sophia Ananiadou','sophia-ananiadou']];
 const chair = ['Alejandro Lopez-Lira','alejandro-lopez-lira'];
-const execs = [['Xi Chen','xi-chen','Executive'],['Yuehua Tang','yuehua-tang','Executive'],['Michał Dzieliński','michal-dzielinski','Executive'],['Prayag Tiwari','prayag-tiwari','Executive'],['Jiahuan Pei','jiahuan-pei','Executive'],['Amit Kumar Jaiswal','amit-kumar-jaiswal','Executive'],['Dr. Xueqing Peng','xueqing-peng','Community Secretary','comm']];
+const execs = [['Xi Chen','xi-chen','Executive'],['Yuehua Tang','yuehua-tang','Executive'],['Michał Dzieliński','michal-dzielinski','Executive'],['Prayag Tiwari','prayag-tiwari','Executive'],['Jiahuan Pei','jiahuan-pei','Executive'],['Amit Kumar Jaiswal','amit-kumar-jaiswal','Executive'],['Yijia (Eddie) Zhao','yijia-zhao','Executive'],['Dr. Xueqing Peng','xueqing-peng','Community Secretary','comm']];
 const chapters = [
   {k:'NA',name:'North America',c:'#0060b0',lat:40,lon:-95,tz:'America/New_York',tzl:'ET',chair:['Dr. Yan Wang','yan-wang'],sec:['Dr. Lingfei Qian','lingfei-qian']},
   {k:'EU',name:'Europe',c:'#7c3aed',lat:50,lon:10,tz:'Europe/Paris',tzl:'CET',chair:['Yuechen Jiang','yuechen-jiang'],sec:['Yuyan Wang','yuyan-wang']},
@@ -303,7 +303,7 @@ const personas = [
     ['Partner','Partner with The Fin AI','Work with one of Global Finance’s World’s Best Financial Innovation Labs 2026.','About us','./about.html']]}
 ];
 const repos = [['PIXIU',892],['trials',136],['Fino1',81],['FinCon',67],['CALM',67],['FinSeer',24],['FinBen',18],['FinTagging',14],['HARMONIC',13],['The-FinData',11],['Agent_Market_Arena',7],['FinAuditing',5]];
-const ini = n => n.replace(/^Dr\. /, '').split(/[\s-]+/).map(s => s[0]).slice(0, 2).join('');
+const ini = n => n.replace(/^Dr\. /, '').replace(/\(.*?\)\s*/, '').split(/[\s-]+/).map(s => s[0]).slice(0, 2).join('');
 const photo = (n, img, extra = '') => `<div class="photo" ${extra}><span class="initials">${ini(n)}</span><img src="${IMG}${img}.jpg" alt="${n}" loading="lazy" onerror="this.remove()"></div>`;
 
 /* ---------- ticker: monthly citation gains (citations.json, refreshed monthly) ---------- */
